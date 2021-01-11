@@ -12,7 +12,7 @@ module.exports = {
             {name: '**Step 3**', value: '__ONCE THIS MESSAGE HAS 700 REACTIONS (or check marks clicked) THEN THE OCTANE WILL BE GIVEN AT RANDOM TO A LUCKY WINNER__'}
         )
         .setFooter('Rocket League Trading Server ©')
-        .setImage ('https://img.icons8.com/nolan/452/rocket-league.png');
+        .setFooterImage('https://img.icons8.com/nolan/452/rocket-league.png');
 
         message.channel.send(newEmbed);
     }
