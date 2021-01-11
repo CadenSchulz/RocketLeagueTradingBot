@@ -11,7 +11,6 @@ module.exports = {
             {name: 'Step 2', value: 'Invite as many people as you can to click the check mark!'},
             {name: 'Step 3', value: '**ONCE THIS MESSAGE HAS 700 REACTIONS (or check marks clicked) THEN THE OCTANE WILL BE GIVEN AT RANDOM TO A LUCKY WINNER**'}
         )
-        .setImage('https://img.icons8.com/nolan/452/rocket-league.png')
         .setFooter('Rocket League Trading Server ©');
 
         message.channel.send(newEmbed);
