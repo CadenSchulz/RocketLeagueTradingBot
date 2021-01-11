@@ -31,6 +31,10 @@ client.on('message', message => {
 	if(command === 'help'){
 
 		client.commands.get('help').execute(message, args, Discord);
+
+	if(command === 'giveaway'){
+		client.commands.get('help').execute(message, args, Discord);
+	}
 	}
 });
 
