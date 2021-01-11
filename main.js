@@ -29,11 +29,11 @@ client.on('message', message => {
 	const command = args.shift().toLowerCase();
 
 	if(command === 'help'){
-
 		client.commands.get('help').execute(message, args, Discord)
 
 	if(command === 'giveaway'){
 		client.commands.get('giveaway').execute(message, args, Discord);
+	}
 	}
 });
 
