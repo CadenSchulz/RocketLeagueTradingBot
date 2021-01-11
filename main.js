@@ -32,9 +32,8 @@ client.on('message', message => {
 
 		client.commands.get('help').execute(message, args, Discord)
 
-	if(command === 'giveaway'){
+	if(command === 'giveaway')}
 		client.commands.get('help').execute(message, args, Discord);
-	}
 	}
 });
 
