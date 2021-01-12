@@ -18,7 +18,7 @@ for(const file of commandFiles){
 
 client.once('ready', () =>{
 	console.log('RocketLeagueTradingBot is online!');
-	client.user.setActivity('<the support channel>', { type: 'WATCHING' });
+	client.user.setActivity('for -help', { type: 'WATCHING' });
 });
 
 client.on('message', message => {
