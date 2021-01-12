@@ -22,18 +22,7 @@ client.once('ready', () =>{
 	console.log('RocketLeagueTradingBot is online!');
 	client.user.setActivity('for -help', {type: 'WATCHING' });
 
-	privateMessag(client, 'help', 
-	const newEmbed = new Discord.MessageEmbed()
-	.setColor('#777777')
-	.setTitle('**__TW Octane Giveaway__**')
-	.setDescription('**How To Enter:**')
-	.addFields(
-		{name: '**Step 1**', value: 'React to this message (click the check mark)'},
-		{name: '**Step 2**', value: 'Invite as many people as you can to click the check mark!'},
-		{name: '**Step 3**', value: '__ONCE THIS MESSAGE HAS 700 REACTIONS (or check marks clicked) THEN THE OCTANE WILL BE GIVEN AT RANDOM TO A LUCKY WINNER__'}
-	)
-	.setFooter('Rocket League Trading Server ©'));
-	message.privateMessag.send(newEmbed);
+	privateMessag(client, 'help', 'If you need help, check out the support channel in the Rocket League Trading Server!')
 });
 
 client.on('message', message => {
