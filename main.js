@@ -18,13 +18,7 @@ for(const file of commandFiles){
 
 client.once('ready', () =>{
 	console.log('RocketLeagueTradingBot is online!');
-	client.user.setPresence({
-        status: "online",  // You can show online, idle... Do not disturb is dnd
-        game: {
-            name: "-help",  // The message shown
-            type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
-        }
-    });
+	<client>.user.setActivity('<the support channel>', { type: 'WATCHING' });
 });
 
 client.on('message', message => {
