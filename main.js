@@ -16,12 +16,12 @@ for(const file of commandFiles){
 }
 
 
-client.once('ready', () => {
+client.once('ready', () =>{
 	console.log('RocketLeagueTradingBot is online!');
 	client.user.setPresence({
 		status: "online ",
 		game: {
-			name: "Using -help",
+			name: "-help",
 			type: "WATCHING"
 		}
 	});
