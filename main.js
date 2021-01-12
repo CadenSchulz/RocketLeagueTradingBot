@@ -18,7 +18,7 @@ for(const file of commandFiles){
 
 client.once('ready', () =>{
 	console.log('RocketLeagueTradingBot is online!');
-	client.user.setActivity({
+	client.user.setPresence({
         status: "online",  // You can show online, idle... Do not disturb is dnd
         game: {
             name: "-help",  // The message shown
