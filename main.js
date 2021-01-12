@@ -20,7 +20,7 @@ for(const file of commandFiles){
 
 client.once('ready', () =>{
 	console.log('RocketLeagueTradingBot is online!');
-	client.user.setActivity('for -help', { type: 'Watching' });
+	client.user.setActivity('for -help', {type: 'WATCHING' });
 
 	privateMessag(client, 'help', 'If you need help, check out the support channel in the Rocket League Trading Server!')
 });
