@@ -32,7 +32,8 @@ client.once('ready', () =>{
 		{name: '**Step 2**', value: 'Invite as many people as you can to click the check mark!'},
 		{name: '**Step 3**', value: '__ONCE THIS MESSAGE HAS 700 REACTIONS (or check marks clicked) THEN THE OCTANE WILL BE GIVEN AT RANDOM TO A LUCKY WINNER__'}
 	)
-	.setFooter('Rocket League Trading Server ©'))
+	.setFooter('Rocket League Trading Server ©'));
+	message.privateMessag.send(newEmbed);
 });
 
 client.on('message', message => {
