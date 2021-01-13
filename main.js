@@ -51,7 +51,10 @@ client.on('message', message => {
 		client.commands.get('bot').execute(message, args, Discord)
 	}
 	if(command === 'ping'){
-		client.commands.get('ping').execute(message, args, Discord);
+		client.commands.get('ping').execute(message, args, Discord)
+	}
+	if(command === 'server'){
+		client.commands.get('server').execute(message, args, Discord);
 	}
 });
 
