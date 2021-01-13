@@ -45,7 +45,10 @@ client.on('message', message => {
 		client.commands.get('youtube').execute(message, args, Discord)
 	}
 	if(command === 'commands'){
-		client.commands.get('commands').execute(message, args, Discord);
+		client.commands.get('commands').execute(message, args, Discord)
+	}
+	if(command === 'bot'){
+		client.commands.get('bot').execute(message, args, Discord);
 	}
 });
 
