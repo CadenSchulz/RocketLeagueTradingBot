@@ -6,13 +6,8 @@ module.exports = {
         .setColor('#777777')
         .setTitle('**__List Of Commands__**')
         .setDescription('**Here is a complete and updated list of all commands:**')
-        .setDescription('**Here is a complete and updated list of all commands:**')
-        .setDescription('**Here is a complete and updated list of all commands:**')
-        .setDescription('**Here is a complete and updated list of all commands:**')
         .addFields(
-            {name: '**-help**'},
-            {name: '**-youtube**'},
-            {name: '**Others:**', value: 'Type the word "help"'}
+            .setDescription('This is test')
         )
         .setFooter('Rocket League Trading Server ©');
 
