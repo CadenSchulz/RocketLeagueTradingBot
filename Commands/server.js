@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
-        .setTitle(`**Server name**: ${message.guild.name}\n**Total members:** ${message.guild.memberCount}`)
+        .setDescription(`**Server name**: ${message.guild.name}\n**Total members:** ${message.guild.memberCount}`)
         .setFooter('Rocket League Trading Server ©');
 
         message.channel.send(newEmbed);
