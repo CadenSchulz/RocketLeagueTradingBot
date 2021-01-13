@@ -48,7 +48,11 @@ client.on('message', message => {
 		client.commands.get('commands').execute(message, args, Discord)
 	}
 	if(command === 'bot'){
-		client.commands.get('bot').execute(message, args, Discord);
+		client.commands.get('bot').execute(message, args, Discord)
+	}
+	if(client.on('message', message => {
+		if (message.content === '-ping') {
+			message.channel.send(`🏓Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
 	}
 });
 
