@@ -10,7 +10,7 @@ module.exports = {
             {name: '**-help**',
              value: 'test 1',
              value: 'test 2',
-            }
+            },
             {name: '**-youtube**', value: 'test'},
             {name: '**Others:**', value: 'Type the word "help"'}
         )
