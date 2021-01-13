@@ -42,7 +42,10 @@ client.on('message', message => {
 		client.commands.get('randomwinner').execute(message, args, Discord)
 	}
 	if(command === 'youtube'){
-		client.commands.get('youtube').execute(message, args, Discord);
+		client.commands.get('youtube').execute(message, args, Discord)
+	}
+	if(command === 'commands'){
+		client.commands.get('commands').execute(message, args, Discord);
 	}
 });
 
