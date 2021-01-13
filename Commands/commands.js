@@ -9,6 +9,7 @@ module.exports = {
         .addFields(
             {name: '``-help``', value: '``-youtube``'}, //TYPE `` to make the gray outline in the embed
             {name: '``-bot``', value: '**``-ping``**'},
+            {name: '``-server``', value: '**``----------``**'},
             {name: '**Others:**', value: '``Type the word "help"``'},
             {name: 'NEED HELP STILL?', value: '``-commands or -help``'}
         )
