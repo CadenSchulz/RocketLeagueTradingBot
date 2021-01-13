@@ -8,7 +8,7 @@ module.exports = {
         .setDescription('**Here is a complete and updated list of all commands:**')
         .addFields(
             {name: '-help', value: '**-youtube**'},
-            {name: '-bot', value: '**-youtube**'},
+            {name: '-bot', value: '**-ping**'},
             {name: '**Others:**', value: 'Type the word "help"'},
             {name: 'NEED HELP STILL?', value: '-commands or -help'}
         )
