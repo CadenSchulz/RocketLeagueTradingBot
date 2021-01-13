@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'giveaway',
+    name: 'commands',
     description: "Embed for giveaway Command",
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
