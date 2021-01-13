@@ -7,8 +7,8 @@ module.exports = {
         .setTitle('**__List Of Commands__**')
         .setDescription('**Here is a complete and updated list of all commands:**')
         .addFields(
-            {name: '**-help**'},
-            {name: '**-youtube**', value: '**-youtube**'},
+            {name: '-help', value: '**-youtube**'},
+            {name: '-youtube', value: '**-youtube**'},
             {name: '**Others:**', value: 'Type the word "help"'}
         )
         .setFooter('Rocket League Trading Server ©');
