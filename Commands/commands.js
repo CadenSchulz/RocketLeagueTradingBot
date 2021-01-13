@@ -11,7 +11,7 @@ module.exports = {
              value: 'test 1',
              value: 'test 2'
             },
-            {name: '**-youtube**', value: 'test'},
+            {name: '**-youtube**', value: '\u200'},
             {name: '**Others:**', value: 'Type the word "help"'}
         )
         .setFooter('Rocket League Trading Server ©');
