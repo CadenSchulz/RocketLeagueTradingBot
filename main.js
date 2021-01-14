@@ -58,6 +58,4 @@ client.on('message', message => {
 	}
 });
 
-const privateMessag = require('./1')
-
 client.login(process.env.token);
