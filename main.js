@@ -2,8 +2,6 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const privateMessag = require('./private')
-
 const privateMessag = require('./private-message')
 
 const prefix = '-';
@@ -24,7 +22,6 @@ client.once('ready', () =>{
 	console.log('RocketLeagueTradingBot is online!');
 	client.user.setActivity('for -help', {type: 'WATCHING' });
 
-	privateMessag(client, 'yoo', 'whats up')
 	privateMessag(client, 'help', '**__If you need help, check out the support channel in the Rocket League Trading Server or use this link to get there:__**  https://discord.com/channels/795513122362097675/797363588909891584/797370786414723083')
 });
 
