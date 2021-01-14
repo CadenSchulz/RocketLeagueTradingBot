@@ -4,8 +4,6 @@ const client = new Discord.Client();
 
 const privateMessag = require('./private-message')
 
-const privateMessag = require('./1')
-
 const prefix = '-';
 
 const fs = require('fs');
@@ -19,6 +17,7 @@ for(const file of commandFiles){
 	client.commands.set(command.name, command);
 }
 
+const privateMessag = require('./1')
 
 client.once('ready', () =>{
 	console.log('RocketLeagueTradingBot is online!');
