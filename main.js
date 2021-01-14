@@ -4,8 +4,6 @@ const client = new Discord.Client();
 
 const privateMessag = require('./private-message')
 
-const { RichEmbed } = require('react.js');
-
 const prefix = '-';
 
 const fs = require('fs');
