@@ -4,6 +4,20 @@ const client = new Discord.Client();
 
 const privateMessag = require('./private-message')
 
+const { RichEmbed } = require('react.js');
+
+var embed = new RichEmbed()
+  .setTitle('**Test**')
+  .setDescription('React with the emojis.');
+
+message.channel.send(embed)
+  .then(async msg => {
+    // Establish reaction collector
+
+    for (emoji of ['◀', '▶', '❌']) await msg.react(emoji);
+  })
+  .catch(console.error);
+
 const prefix = '-';
 
 const fs = require('fs');
