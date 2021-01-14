@@ -22,7 +22,6 @@ client.once('ready', () =>{
 	client.user.setActivity('for -help', {type: 'WATCHING' });
 
 	privateMessag(client, 'help', '**__If you need help, check out the support channel in the Rocket League Trading Server or use this link to get there:__**  https://discord.com/channels/795513122362097675/797363588909891584/797370786414723083')
-	privateMessag(client, '1', 'test complete')
 });
 
 client.on('message', message => {
