@@ -17,8 +17,6 @@ for(const file of commandFiles){
 	client.commands.set(command.name, command);
 }
 
-const privateMessag = require('./1')
-
 client.once('ready', () =>{
 	console.log('RocketLeagueTradingBot is online!');
 	client.user.setActivity('for -help', {type: 'WATCHING' });
@@ -60,5 +58,6 @@ client.on('message', message => {
 	}
 });
 
+const privateMessag = require('./1')
 
 client.login(process.env.token);
