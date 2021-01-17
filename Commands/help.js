@@ -6,7 +6,7 @@ module.exports = {
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
-        .setTitle(`${Client.user.tag}`)
+        .setTitle('${Client.user.tag}')
         .setDescription('Check your messages!')
         .setFooter('Rocket League Trading Server ©');
 
