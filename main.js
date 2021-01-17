@@ -70,6 +70,9 @@ client.on('message', message => {
 	if(command === 'other'){
 		client.commands.get('other').execute(message, args, Discord);
 	}
+	if(command === 'more'){
+		client.commands.get('more').execute(message, args, Discord);
+	}
 });
 
 client.login(process.env.token);
