@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'scams',
-    description: "Embed for scams Command",
+    name: 'scam',
+    description: "Embed for scam Command",
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
