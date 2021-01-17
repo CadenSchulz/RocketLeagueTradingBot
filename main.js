@@ -61,8 +61,8 @@ client.on('message', message => {
 	if(command === 'no'){
 		client.commands.get('no').execute(message, args, Discord)
 	}
-	if(command === 'scams'){
-		client.commands.get('scams').execute(message, args, Discord)
+	if(command === 'scam'){
+		client.commands.get('scam').execute(message, args, Discord)
 	}
 	if(command === 'rules'){
 		client.commands.get('rules').execute(message, args, Discord)
