@@ -1,6 +1,6 @@
 module.exports = {
-    name: '-no',
-    description: "Embed for -no Command",
+    name: 'no',
+    description: "Embed for no Command",
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
