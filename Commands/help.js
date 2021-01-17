@@ -1,10 +1,12 @@
+const { Client } = require("discord.js");
+
 module.exports = {
     name: 'help',
     description: "Embed for Help Command",
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
-        .setTitle(`${user.username}`)
+        .setTitle(`${Client.user.tag}`)
         .setDescription('Check your messages!')
         .setFooter('Rocket League Trading Server ©');
 
