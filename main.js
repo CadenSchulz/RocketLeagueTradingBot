@@ -53,7 +53,22 @@ client.on('message', message => {
 		client.commands.get('ping').execute(message, args, Discord)
 	}
 	if(command === 'server'){
-		client.commands.get('server').execute(message, args, Discord);
+		client.commands.get('server').execute(message, args, Discord)
+	}
+	if(command === 'yes'){
+		client.commands.get('yes').execute(message, args, Discord)
+	}
+	if(command === 'no'){
+		client.commands.get('no').execute(message, args, Discord);
+	}
+	if(command === 'scams'){
+		client.commands.get('scams').execute(message, args, Discord);
+	}
+	if(command === 'rules'){
+		client.commands.get('rules').execute(message, args, Discord);
+	}
+	if(command === 'other'){
+		client.commands.get('other').execute(message, args, Discord);
 	}
 });
 
