@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
-        .setTitle(${user.username})
+        .setTitle('${user.username}')
         .setDescription('Check your messages!')
         .setFooter('Rocket League Trading Server ©');
 
