@@ -68,10 +68,13 @@ client.on('message', message => {
 		client.commands.get('rules').execute(message, args, Discord)
 	}
 	if(command === 'other'){
-		client.commands.get('other').execute(message, args, Discord);
+		client.commands.get('other').execute(message, args, Discord)
 	}
 	if(command === 'more'){
-		client.commands.get('more').execute(message, args, Discord);
+		client.commands.get('more').execute(message, args, Discord)
+	}
+	if(command === 'shoutout'){
+		client.commands.get('shoutout').execute(message, args, Discord);
 	}
 });
 
