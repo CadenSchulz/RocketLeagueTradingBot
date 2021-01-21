@@ -1,3 +1,5 @@
+const { User } = require("discord.js");
+
 module.exports = {
     name: 'shoutout',
     description: "Embed for shoutout Command",
