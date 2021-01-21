@@ -13,7 +13,7 @@ const newEmbed = new Discord.MessageEmbed()
 	.attachFiles(['../assets/discordjs.png'])
 	.setImage('attachment://discordjs.png');
 
-channel.send({embed: newEmbed});
+channel.send({ embed: newEmbed });
 
 channel.send({ embed: newEmbed });
 
