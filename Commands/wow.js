@@ -1,4 +1,4 @@
-const exampleEmbed = {
+const newEmbed = {
 	color: 0x0099ff,
 	title: 'wow',
 	url: 'https://discord.js.org',
