@@ -8,8 +8,6 @@ const prefix = '-';
 
 const fs = require('fs');
 
-channel.send({ embed: newEmbed });
-
 client.commands = new Discord.Collection();
 
 const commandFiles = fs.readdirSync('./Commands/').filter(File => File.endsWith('.js'));
