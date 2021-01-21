@@ -8,13 +8,6 @@ const prefix = '-';
 
 const fs = require('fs');
 
-const newEmbed = new Discord.MessageEmbed()
-	.setTitle('wow')
-	.attachFiles(['../assets/discordjs.png'])
-	.setImage('attachment://discordjs.png');
-
-channel.send({ embed: newEmbed });
-
 channel.send({ embed: newEmbed });
 
 client.commands = new Discord.Collection();
