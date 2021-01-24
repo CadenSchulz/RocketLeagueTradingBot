@@ -10,9 +10,10 @@ module.exports = {
             const memberTarget = message.guild.members.cache.get(target.id);
             memberTarget.kick();
             message.channel.send("**User has been banned from Rocket League Trading Server**");
-        }else{
+        } else{
             message.channel.send(`No member selected to ban (Please type: **-ban @______**)`);
         } else{
             message.channel.send('You do not have permission to use this command')
+        }
     }
 }
