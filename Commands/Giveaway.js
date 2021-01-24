@@ -2,6 +2,9 @@ module.exports = {
     name: 'giveaway',
     description: "Embed for giveaway Command",
     execute(message, args, Discord){
+
+        if(message.member.roles.cache.has('795528794936311868')){
+
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
         .setTitle('**__TW Octane Giveaway__**')
@@ -13,6 +16,13 @@ module.exports = {
         )
         .setFooter('Rocket League Trading Server ©');
 
-        message.channel.send(newEmbed);
+
+            message.channel.send(newEmbed);
+
+        } else{
+            message.channel.send('You do not have permission to use this command')
+        }
+
+        
     }
 }
