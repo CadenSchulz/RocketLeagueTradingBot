@@ -74,7 +74,13 @@ client.on('message', message => {
 		client.commands.get('more').execute(message, args, Discord)
 	}
 	if(command === 'shoutout'){
-		client.commands.get('shoutout').execute(message, args, Discord);
+		client.commands.get('shoutout').execute(message, args, Discord)
+	}
+	if(command === 'kick'){
+		client.commands.get('kick').execute(message, args, Discord)
+	}
+	if(command === 'ban'){
+		client.commands.get('ban').execute(message, args, Discord);
 	}
 });
 
