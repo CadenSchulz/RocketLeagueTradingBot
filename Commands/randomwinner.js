@@ -3,7 +3,7 @@ module.exports = {
     description: "Embed for randomwinner Command",
     execute(message, args, Discord){
 
-        if(message.member.roles.cache.has('797392951310549033')){
+        if(message.member.roles.cache.has('795528794936311868')){
 
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
@@ -20,6 +20,6 @@ module.exports = {
             message.channel.send('You do not have permission to use this command')
         }
 
-        
+
     }
 }
