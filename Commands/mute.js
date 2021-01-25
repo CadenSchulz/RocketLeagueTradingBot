@@ -21,12 +21,11 @@ module.exports = {
             }
             memberTarget.roles.remove(mainRole.id);
             memberTarget.roles.add(muteRole.id);
-            message.channel.send(`<@${memberTarget.user.id}> **has been muted**`);
+            message.channel.send(`<@${memberTarget.user.id}> has been muted for ${ms(ms(args[1]))}`);
 
             setTimeout(function() {
                 memberTarget.roles.remove(muteRole.id);
                 memberTarget.roles.add(mainRole.id);
-                message.channel.send(`<@${memberTarget.user.id}> has been muted for ${ms(ms(args[1]))}`);
             }, ms(args[1]));
         } else
             message.channel.send(`**You coudn't mute because no member was selected!**`);
