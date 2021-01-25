@@ -20,7 +20,7 @@ module.exports = class UserInfoCommand extends Commando.Command {
         const embed = new MessageEmbed().setAuthor(
             `User info for ${user.username}`,
             user.displayAvatarURL)
-        ()
+        
 
         channel.send(embed)
     }
