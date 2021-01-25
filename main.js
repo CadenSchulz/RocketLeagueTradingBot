@@ -80,7 +80,10 @@ client.on('message', message => {
 		client.commands.get('kick').execute(message, args, Discord)
 	}
 	if(command === 'ban'){
-		client.commands.get('ban').execute(message, args, Discord);
+		client.commands.get('ban').execute(message, args, Discord)
+	}
+	if(command === 'mute'){
+		client.commands.get('mute').execute(message, args, Discord);
 	}
 });
 
