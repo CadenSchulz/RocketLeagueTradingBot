@@ -8,7 +8,7 @@ module.exports = {
             memberTarget.kick();
             message.channel.send("**User has been kicked from Rocket League Trading Server**");
         }else{
-            message.channel.send(`You do not have permission to kick that member!`);
+            message.channel.send(`**You coudn't kick that member because no member was selected!**`);
         }
     }
 }

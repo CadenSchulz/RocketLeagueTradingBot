@@ -8,7 +8,7 @@ module.exports = {
             memberTarget.kick();
             message.channel.send("User has been banned from the Rocket League Trading Server");
         }else{
-            message.channel.send(`You coudn't ban that member because no member was selected!`);
+            message.channel.send(`**You coudn't ban that member because no member was selected!**`);
         }
     }
 }
