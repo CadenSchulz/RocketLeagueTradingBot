@@ -17,9 +17,11 @@ module.exports = class UserInfoCommand extends Commando.Command {
         const user = message.mentions.users.first() || message.member.user
         const member = guild.member.cache.gt(user.id)
 
-        const embed = new MessageEmbed()
-            .setAuthor(
-                `User info for ${user.username}`,
-                user.displayAvatarURL))
+        const embed = new MessageEmbed().setAuthor(
+            `User info for ${user.username}`,
+            user.displayAvatarURL)
+        )
+
+        channel.send(embed)
     }
 }
