@@ -3,7 +3,7 @@ module.exports = {
     description: "This command kicks a member!",
     execute(message, args){
 
-        if(message.member.roles.cache.has('795528794936311868')){
+        if(message.member.roles.cache.has('797392951310549033')){
 
         const target = message.mentions.users.first();
         if(target){
