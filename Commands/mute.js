@@ -14,7 +14,7 @@ module.exports = {
 
             memberTarget.roles.remove(mainRole.id);
             memberTarget.roles.add(muteRole.id);
-            message.channel.send(`<@${memberTarget.user.id}> has been muted`)
+            message.channel.send(`<@${memberTarget.user.id}> **has been muted**`)
 
         } else
             message.channel.send(`**You coudn't mute because no member was selected!**`);
