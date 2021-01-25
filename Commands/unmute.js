@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'mute',
-    description: "This command mutes a member!",
+    name: 'unmute',
+    description: "This command unmutes a member!",
     execute(message, args){
 
         if(message.member.roles.cache.has('797392951310549033')){
@@ -12,12 +12,12 @@ module.exports = {
 
             let memberTarget= message.guild.members.cache.get(target.id);
 
-            memberTarget.roles.remove(mainRole.id);
-            memberTarget.roles.add(muteRole.id);
-            message.channel.send(`<@${memberTarget.user.id}> has been muted`)
+            memberTarget.roles.remove(muteRole.id);
+            memberTarget.roles.add(mainRole.id);
+            message.channel.send(`<@${memberTarget.user.id}> has been unmuted`)
 
         } else
-            message.channel.send(`**You coudn't mute because no member was selected!**`);
+            message.channel.send(`**You coudn't unmute because no member was selected!**`);
         }else{
             message.channel.send('**You do not have permission to use this command**');
         }
