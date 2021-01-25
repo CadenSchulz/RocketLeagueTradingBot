@@ -9,7 +9,7 @@ module.exports = {
         .setColor('#777777')
         .setTitle('**__Winner of TW OCTANE__**')
         .addFields(
-            {name: '**Winner:**', value: `<@${memberTarget.user.id === 529381901962706963}>`}
+            {name: '**Winner:**', value: `<@${memberTarget.user.id}>`}
         )
         .setFooter('Rocket League Trading Server ©');
 
