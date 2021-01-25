@@ -88,6 +88,9 @@ client.on('message', message => {
 	if(command === 'unmute'){
 		client.commands.get('unmute').execute(message, args, Discord);
 	}
+	if(command === 'info'){
+		client.commands.get('info').execute(message, args, Discord);
+	}
 });
 
 client.login(process.env.token);
