@@ -12,7 +12,7 @@ module.exports = {
         .setTitle('**__Winner of TW OCTANE__**')
         .addFields(
             {name: '**Winner:**', value: `<@529381901962706963>`},
-            {description: `Please DM <@700481325232160838> to claim your prize!`}
+            {name: '**How to claim your prize:**', value: `Please DM <@700481325232160838> to claim your prize!`}
         )
         .setFooter('Rocket League Trading Server ©');
 
