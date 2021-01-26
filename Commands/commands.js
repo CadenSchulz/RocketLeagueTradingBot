@@ -5,6 +5,7 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
         .setTitle('**__Rocket League Trading Server__**')
+        .setDescription('**Prefix: -**')
         .addFields(
             {
                 name: ':white_small_square: **prefix: -**',
