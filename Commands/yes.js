@@ -5,8 +5,8 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
         .setTitle('**__GETTING YOU HELP!__**')
-        .setDescription("**__Which of these things do you need help with?__**")
         .setThumbnail(message.guild.iconURL())
+        .setDescription("**__Which of these things do you need help with?__**")
         .addFields(
             {
                 name: 'For help with scams and reporting players, please type:', 
