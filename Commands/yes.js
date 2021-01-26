@@ -43,6 +43,9 @@ module.exports = {
 
 
 
+
+
+//--------------------------------------------OLD VERSION------------------------------------------------------------------------
 // module.exports = {
 //     name: 'yes',
 //     description: "Embed for yes Command",
