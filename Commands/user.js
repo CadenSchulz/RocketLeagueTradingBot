@@ -14,9 +14,4 @@ module.exports = {
         .setTimestamp();
 
     message.channel.send({ embed: embed });
-    return;
 }
-
-exports.help = {
-    name: 'user'
-};
