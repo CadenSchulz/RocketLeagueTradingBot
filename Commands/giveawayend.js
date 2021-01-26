@@ -15,6 +15,7 @@ module.exports = {
             {name: '**To select winner, type:**', value: '-randomwinner'},
             {name: '**To delete this giveaway and start a new one, type:**', value: '-giveawaydelete'}
         )
+        .setTimestamp()
         .setFooter('Rocket League Trading Server ©');
 
 

@@ -14,6 +14,7 @@ module.exports = {
             {name: '**Winner:**', value: `<@529381901962706963>`},
             {name: '**How to claim your prize:**', value: `Please DM <@700481325232160838> to claim your prize!`}
         )
+        .setTimestamp()
         .setFooter('Rocket League Trading Server ©');
 
             message.channel.send(newEmbed);
