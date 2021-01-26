@@ -12,11 +12,11 @@
 //         message.channel.send(embed)
 
 module.exports = {
-    name: 'scam',
-    description: "Embed for scam Command",
+    name: 'server',
+    description: "Embed for server Command",
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
-        .setColor("RANDOM")
+        .setColor("777777")
             .setTitle("Server Info")
             .setImage(message.guild.iconURL)
             .setDescription(`${message.guild}'s information`)
