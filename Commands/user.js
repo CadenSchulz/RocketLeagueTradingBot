@@ -72,6 +72,6 @@ module.exports = {
                 }
             )
 
-        await message.channel.send(embed)
+        message.channel.send(embed)
     }
 }
