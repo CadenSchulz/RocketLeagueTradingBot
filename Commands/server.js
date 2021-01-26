@@ -29,7 +29,7 @@ module.exports = {
     description: "Embed for server Command",
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
-        .setAuthor(message.guild.name, message.guild.iconURL)
+        .setAuthor(message.guild.name, message.guild.iconURL())
         .setColor('#FFFFFF')
         .setImage(message.guild.iconURL())
         .setDescription(`Owner: ${message.guild.owner}`)
