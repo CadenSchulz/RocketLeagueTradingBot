@@ -83,7 +83,7 @@ client.on('message', message => {
 		client.commands.get('ban').execute(message, args, Discord)
 	}
 	if(command === 'mute'){
-		client.commands.get('mute').execute(message, args, Discord);
+		client.commands.get('mute').execute(message, args, Discord)
 	}
 	if(command === 'unmute'){
 		client.commands.get('unmute').execute(message, args, Discord);
