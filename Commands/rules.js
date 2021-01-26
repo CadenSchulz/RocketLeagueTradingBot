@@ -5,7 +5,7 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
         .setTitle('**Rules/Guidelines**')
-        .setDescription("**To access the rules/guidelines of the server:** [click me](https://discord.gg/qeQCEJvzD8).")
+        .setDescription("**To access the rules/guidelines of the server:** <#795513122865283114>")
         .setFooter('Rocket League Trading Server ©');
 
         message.channel.send(newEmbed);

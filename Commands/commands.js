@@ -10,7 +10,7 @@ module.exports = {
             {name: '``-help``', value: '``-youtube``'}, //TYPE `` to make the gray outline in the embed
             {name: '``-bot``', value: '**``-ping``**'},
             {name: '``-server``', value: '**``----------``**'},
-            {name: 'NEED HELP STILL?', value: '``-commands or -help``'}
+            {name: 'NEED HELP STILL?', value: '``-help or <#797363588909891584>``'}
         )
         .setFooter('Rocket League Trading Server ©');
 
