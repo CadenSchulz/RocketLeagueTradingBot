@@ -88,6 +88,9 @@ client.on('message', message => {
 	if(command === 'server'){
 		client.commands.get('server').execute(message, args, Discord);
 	}
+	if(command === 'user'){
+		client.commands.get('user').execute(message, args, Discord);
+	}
 });
 
 client.login(process.env.token);
