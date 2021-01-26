@@ -8,10 +8,11 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
         .setTitle('**__TW Octane Giveaway COMPLETE__**')
-        .setDescription('``This giveaway has ended. The owner of the server must follow these directions:``')
+        .setThumbnail('https://tineye.com/query/6c5c7373af8911e31e45fb29892e373cd5f34eec?size=160')
+        .setDescription('```This giveaway has ended. The owner of the server must follow these directions:```')
         .addFields(
-            {name: '``To select winner, type:``', value: '-randomwinner'},
-            {name: '``To delete this giveaway and start a new one, type:``', value: '-giveawaydelete'}
+            {name: '``To select winner, type:``', value: '``-randomwinner``'},
+            {name: '``To delete this giveaway and start a new one, type:``', value: '``-giveawaydelete``'}
         )
         .setFooter('Rocket League Trading Server ©');
 
