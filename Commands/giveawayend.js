@@ -22,7 +22,7 @@ module.exports = {
             message.channel.send(newEmbed);
 
         } else{
-            message.channel.send('You do not have permission to use this command')
+            message.channel.send('**You do not have permission to use this command!**')
         }
 
         

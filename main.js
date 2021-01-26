@@ -91,6 +91,9 @@ client.on('message', message => {
 	if(command === 'giveawayend'){
 		client.commands.get('giveawayend').execute(message, args, Discord);
 	}
+	if(command === 'giveawaydelete'){
+		client.commands.get('giveawaydelete').execute(message, args, Discord);
+	}
 });
 
 client.login(process.env.token);
