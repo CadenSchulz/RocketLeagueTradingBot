@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'youtube',
-    description: "Embed for youtube Command",
+    name: 'twitch',
+    description: "Embed for twitch Command",
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
