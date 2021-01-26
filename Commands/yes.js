@@ -12,27 +12,27 @@ module.exports = {
             {
                 name: ':one: For help with scams and reporting players, please type:', 
                 value: ':white_small_square:  **-scam**',
-                inline: true
+                inline: false
             },
             {
                 name: ':two: For help with rules and guidelines of the server, please type:', 
                 value: ':white_small_square:  **-rules**',
-                inline: true
+                inline: false
             },
             {
                 name: ':three: For help with all commands of the server, please type:',
                 value: ':white_small_square:  **-commands**',
-                inline: true
+                inline: false
             },
             {
                 name: ':four: For help or info about this bot, please type:',
                 value: ':white_small_square:  **-bot**',
-                inline: true
+                inline: false
             },
             {
                 name: ':five: For any other help not listed here or to talk to a server representative, please type:',
                 value: ':white_small_square:  **-other**',
-                inline: true
+                inline: false
             }
         )
         .setFooter('Rocket League Trading Server ©');
