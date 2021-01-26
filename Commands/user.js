@@ -1,8 +1,12 @@
-module.exports = {
-    name: 'user',
-    description: "Embed for user Command",
-    execute(message, args, Discord){
-        const newEmbed = new Discord.MessageEmbed()
+const Discord = module.require('discord.js');
+const moment = require('moment');
+
+module.exports.run = async (bot, message, args) => {
+
+    let user = message.mentions.users.first() || message.author;
+    const joinDiscord = moment(user.createdAt).format('llll');
+    const joinServer = moment(user.joinedAt).format('llll');
+    let embed = new Discord.RichEmbed()
         .setAuthor(user.username + '#' + user.discriminator, user.displayAvatarURL)
         .setDescription(`${user}`)
         .setColor(`#FFFFFF`)
@@ -13,6 +17,10 @@ module.exports = {
         .setFooter(`ID: ${user.id}`)
         .setTimestamp();
 
-        message.channel.send({ embed: embed });
-    }
+    message.channel.send({ embed: embed });
+    return;
+}
+
+module.exports.help = {
+    name: 'user'
 }
