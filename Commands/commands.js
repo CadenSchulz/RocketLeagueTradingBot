@@ -33,6 +33,11 @@ module.exports = {
                 name: 'NEED HELP STILL?', 
                 value: '<#797363588909891584>',
                 inline: false
+            },
+            {
+                name: ':small_red_triangle_down:', 
+                value: 'FOR A FULL AND UPDATE LIST OF COMMANDS: [CLICK HERE](https://sites.google.com/view/rocketleaguetradingserver/commands)',
+                inline: false
             }
         )
         .setFooter('Rocket League Trading Server ©');
