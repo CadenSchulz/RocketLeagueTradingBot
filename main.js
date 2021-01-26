@@ -92,7 +92,7 @@ client.on('message', message => {
 		client.commands.get('giveawayend').execute(message, args, Discord);
 	}
 	if(command === 'giveawaydelete'){
-		client.commands.get('giveawaydelete').execute(message, args, Discord);
+		client.commands.get('giveawaydelete').execute(message, args, Discord)
 	}
 	if(command === 'user'){
 		client.commands.get('user').execute(message, args, Discord);
