@@ -17,6 +17,6 @@ module.exports = {
     return;
 }
 
-module.exports.help = {
+exports.help = {
     name: 'user'
-}
+};
