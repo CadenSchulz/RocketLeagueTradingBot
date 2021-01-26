@@ -38,7 +38,7 @@ module.exports = {
         .addField('Location', message.guild.region, true)
         .addField('Created', message.guild.createdAt.toLocaleString(), true)
         .setTimestamp()
-        .setFooter(client.user.username, client.user.avatarURL);
+        .setFooter('Rocket League Trading Server ©');
         
         message.channel.send(newEmbed);
     }
