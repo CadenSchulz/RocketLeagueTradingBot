@@ -5,32 +5,33 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
         .setTitle('**__GETTING YOU HELP!__**')
+        .setThumbnail(message.guild.iconURL())
         .setDescription("**__Which of these things do you need help with?__**")
         .addFields(
             {
                 name: 'For help with scams and reporting players, please type:', 
                 value: '**-scam**',
-                inline: false
+                inline: true
             },
             {
                 name: 'For help with rules and guidelines of the server, please type:', 
                 value: '**-rules**',
-                inline: false
+                inline: true
             },
             {
                 name: 'For help with all commands of the server, please type:',
                 value: '**-commands**',
-                inline: false
+                inline: true
             },
             {
                 name: 'For help or info about this bot, please type:',
                 value: '**-bot**',
-                inline: false
+                inline: true
             },
             {
                 name: 'For any other help not listed here or to talk to a server representative, please type:',
                 value: '**-other**',
-                inline: false
+                inline: true
             }
         )
         .setFooter('Rocket League Trading Server ©');
