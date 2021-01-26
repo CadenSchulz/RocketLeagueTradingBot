@@ -11,27 +11,27 @@ module.exports = {
         .addFields(
             {
                 name: ':one: For help with scams and reporting players, please type:', 
-                value: ':online: **-scam**',
+                value: ':white_small_square:  **-scam**',
                 inline: true
             },
             {
                 name: ':two: For help with rules and guidelines of the server, please type:', 
-                value: ':online: **-rules**',
+                value: ':white_small_square:  **-rules**',
                 inline: true
             },
             {
                 name: ':three: For help with all commands of the server, please type:',
-                value: ':online: **-commands**',
+                value: ':white_small_square:  **-commands**',
                 inline: true
             },
             {
                 name: ':four: For help or info about this bot, please type:',
-                value: ':online: **-bot**',
+                value: ':white_small_square:  **-bot**',
                 inline: true
             },
             {
                 name: ':five: For any other help not listed here or to talk to a server representative, please type:',
-                value: ':online: **-other**',
+                value: ':white_small_square:  **-other**',
                 inline: true
             }
         )
