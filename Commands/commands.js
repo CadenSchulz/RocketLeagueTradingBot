@@ -9,7 +9,7 @@ module.exports = {
         .addFields(
             {
                 name: '**prefix: -**',
-                value: ':white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square:'
+                value: ':white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square:',
                 inline: false
             },   
         )
