@@ -5,7 +5,7 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
         .setTitle('**__Rocket League Trading Server__**')
-        .setDescription('**Here is a complete and updated list of all commands:**')
+        .setDescription('**Here is a list of __some__ commands:**')
         .addFields(
             {
                 name: ':white_small_square: **prefix: -**',
