@@ -33,7 +33,7 @@ module.exports = {
         .setColor('#FFFFFF')
         .setImage(message.guild.iconURL())
         .setDescription(`Owner: ${message.guild.owner}`)
-        .addField('Member Count', `${message.guild.memberCount}`, message.guild.iconURL())
+        .addField('Member Count', `${message.guild.memberCount}`)
         .addField("Roles Count", `${message.guild.roles.cache.size} roles`)
         .addField("Emoji Count", `${message.guild.emojis.cache.size} emojis`)
         .addField('AFK Timeout', `${message.guild.afkTimeout / 60} minutes`, true)
