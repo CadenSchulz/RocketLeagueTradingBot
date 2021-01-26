@@ -1,4 +1,4 @@
-let embed = new Discord.MessageEmbed()
+let embed = new MessageEmbed()
             .setColor("RANDOM")
             .setTitle("Server Info")
             .setImage(message.guild.iconURL)
