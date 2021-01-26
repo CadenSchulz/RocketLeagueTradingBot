@@ -5,7 +5,7 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
         .setTitle('**__Rocket League Trading Server__**')
-        .setDescription('**Prefix: -**')
+        .setDescription('**Here is a complete and updated list of all commands:**')
         .addFields(
             {
                 name: ':white_small_square: **prefix: -**',
@@ -13,21 +13,20 @@ module.exports = {
                 inline: false
             },   
         )
-        .setDescription('**Here is a complete and updated list of all commands:**')
         .addFields(
             {
-                name: ':white_small_square: ``-help``', 
-                value: ':white_small_square: ``-youtube``',
+                name: ':white_small_square: -help', 
+                value: ':white_small_square: **-youtube**',
                 inline: false
             },
             {
-                name: ':white_small_square: ``-bot``', 
-                value: ':white_small_square: **``-ping``**',
+                name: ':white_small_square: -bot', 
+                value: ':white_small_square: **-ping**',
                 inline: false
             },
             {
-                name: ':white_small_square: ``-server``', 
-                value: ':white_small_square: **``----------``**',
+                name: ':white_small_square: -server', 
+                value: ':small_red_triangle_down:',
                 inline: false
             },
             {
