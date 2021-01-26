@@ -27,7 +27,7 @@ module.exports = {
                 value: '**-bot**',
                 inline: false
             },
-            {true
+            {
                 name: 'For any other help not listed here or to talk to a server representative, please type:',
                 value: '**-other**',
                 inline: false
