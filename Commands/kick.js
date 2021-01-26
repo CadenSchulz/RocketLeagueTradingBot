@@ -13,7 +13,7 @@ module.exports = {
         }else
             message.channel.send(`**You coudn't kick that member because no member was selected!**`);
         }else{
-            message.channel.send(`@${message.author.username.tag} **You do not have permission to use this command**`);
+            message.channel.send(`@${message.author.tag} **You do not have permission to use this command**`);
         }
     }
 }
