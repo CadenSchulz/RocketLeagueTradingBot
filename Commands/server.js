@@ -1,15 +1,7 @@
-module.exports = {
-    name: 'server',
-    description: "Embed for server Command",
-    execute(message, args, Discord){
-        const newEmbed = new Discord.MessageEmbed()
-        .setColor('#777777')
-        .setDescription(`**Server name**: ${message.guild.name}\n**Total members:** ${message.guild.memberCount}`)
-        .setFooter('Rocket League Trading Server ©');
+// CREATE SOMETHING HERE
 
-        message.channel.send(newEmbed);
-    }
-}
+
+// LOOK UP ONLINE FOR TIPS
 
 
 
