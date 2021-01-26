@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('user');
+// const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: "user",
