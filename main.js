@@ -86,7 +86,10 @@ client.on('message', message => {
 		client.commands.get('unmute').execute(message, args, Discord)
 	}
 	if(command === 'server'){
-		client.commands.get('server').execute(message, args, Discord);
+		client.commands.get('server').execute(message, args, Discord)
+	}
+	if(command === 'giveawayend'){
+		client.commands.get('giveawayend').execute(message, args, Discord);
 	}
 });
 
