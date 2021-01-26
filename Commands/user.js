@@ -3,23 +3,23 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
     name: "user",
     category: "Commands",
-    run: async (client, message, args) => {
+    execute(message, args, Discord){
         let user = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
 
-        // let status;
-        // switch (user.presence.status) {
-        //     case "online":
-        //         status = "<:online:729181184193462285> online";
-        //         break;
-        //     case "dnd":
-        //         status = "<:dnd:729181212530442311> dnd";
-        //         break;
-        //     case "idle":
-        //         status = "<:idle:729181121933475931> idle";
-        //         break;
-        //     case "offline":
-        //         status = "<:offline:729181162182017051> offline";
-        //         break;
+        let status;
+        switch (user.presence.status) {
+            case "online":
+                status = "<:online:729181184193462285> online";
+                break;
+            case "dnd":
+                status = "<:dnd:729181212530442311> dnd";
+                break;
+            case "idle":
+                status = "<:idle:729181121933475931> idle";
+                break;
+            case "offline":
+                status = "<:offline:729181162182017051> offline";
+                break;
         }
 
         const embed = new MessageEmbed()
