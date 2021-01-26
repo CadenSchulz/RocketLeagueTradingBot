@@ -30,8 +30,8 @@ module.exports = {
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
         .setAuthor(message.guild.name, message.guild.iconURL)
-        .setColor(3447003)
-        .setDescription(`Owner: ${message.guild.owner.user.tag} (${message.guild.owner.id})`)
+        .setColor(777777)
+        .setDescription(`Owner: ${message.guild.owner} (${message.guild.owner.id})`)
         .addField('Member Count', `${message.guild.memberCount}`)
         .addField('AFK Timeout', `${message.guild.afkTimeout / 60} minutes`, true)
         .addField('AFK Channel', `${message.guild.afkChannelID === null ? 'No AFK Channel' : client.channels.get(message.guild.afkChannelID).name} (${message.guild.afkChannelID === null ? '' : message.guild.afkChannelID})`, true)
