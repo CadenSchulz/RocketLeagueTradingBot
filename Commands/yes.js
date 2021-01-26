@@ -5,7 +5,7 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#777777')
         .setTitle('**__GETTING YOU HELP!__**')
-        .setThumbnail(message.guild.iconURL())
+        // .setThumbnail(message.guild.iconURL())
         .setDescription("**__Which of these things do you need help with?__**")
         .addFields(
             {
