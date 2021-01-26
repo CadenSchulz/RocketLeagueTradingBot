@@ -35,7 +35,7 @@ module.exports = {
                 inline: true
             }
         )
-        .setFooter('Rocket League Trading Server ©');
+        // .setFooter('Rocket League Trading Server ©');
 
         message.channel.send(newEmbed);
     }
