@@ -10,27 +10,27 @@ module.exports = {
         .setDescription("**__Which of these things do you need help with?__**")
         .addFields(
             {
-                name: 'For help with scams and reporting players, please type:', 
+                name: '``For help with scams and reporting players, please type:``', 
                 value: '**-scam**',
                 inline: true
             },
             {
-                name: 'For help with rules and guidelines of the server, please type:', 
+                name: '``For help with rules and guidelines of the server, please type:``', 
                 value: '**-rules**',
                 inline: true
             },
             {
-                name: 'For help with all commands of the server, please type:',
+                name: '``For help with all commands of the server, please type:``',
                 value: '**-commands**',
                 inline: true
             },
             {
-                name: 'For help or info about this bot, please type:',
+                name: '``For help or info about this bot, please type:``',
                 value: '**-bot**',
                 inline: true
             },
             {
-                name: 'For any other help not listed here or to talk to a server representative, please type:',
+                name: '``For any other help not listed here or to talk to a server representative, please type:``',
                 value: '**-other**',
                 inline: true
             }
