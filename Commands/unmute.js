@@ -14,12 +14,12 @@ module.exports = {
 
             memberTarget.roles.remove(muteRole.id);
             memberTarget.roles.add(mainRole.id);
-            message.channel.send(`<@${memberTarget.user.id}> **has been unmuted**`)
+            message.channel.send(`<@${memberTarget.user.id}> **has been unmuted by** ${message.author}`)
 
         } else
-            message.channel.send(`**You coudn't unmute because no member was selected!**`);
+            message.channel.send(`${message.author} **You coudn't unmute because no member was selected!**`);
         }else{
-            message.channel.send('**You do not have permission to use this command**');
+            message.channel.send(`${message.author} **You do not have permission to use this command!**`);
         }
     }
 }

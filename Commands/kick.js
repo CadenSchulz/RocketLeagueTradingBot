@@ -9,11 +9,11 @@ module.exports = {
         if(target){
             const memberTarget = message.guild.members.cache.get(target.id);
             memberTarget.kick();
-            message.channel.send(`**User has been kicked from Rocket League Trading Server by ${message.author}**`);
+            message.channel.send(`<@${memberTarget.user.id}> **has been kicked from Rocket League Trading Server by** ${message.author}`);
         }else
             message.channel.send(`${message.author}**You coudn't kick that member because no member was selected!**`);
         }else{
-            message.channel.send(`${message.author} **You do not have permission to use this command**`);
+            message.channel.send(`${message.author} **You do not have permission to use this command!**`);
         }
     }
 }

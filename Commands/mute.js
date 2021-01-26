@@ -21,16 +21,16 @@ module.exports = {
             }
             memberTarget.roles.remove(mainRole.id);
             memberTarget.roles.add(muteRole.id);
-            message.channel.send(`<@${memberTarget.user.id}> **has been muted for** ${ms(ms(args[1]))}`);
+            message.channel.send(`<@${memberTarget.user.id}> **has been muted by** ${message.author} **for** ${ms(ms(args[1]))}`);
 
             setTimeout(function() {
                 memberTarget.roles.remove(muteRole.id);
                 memberTarget.roles.add(mainRole.id);
             }, ms(args[1]));
         } else
-            message.channel.send(`**You coudn't mute because no member was selected!**`);
+            message.channel.send(`${message.author} **You coudn't mute because no member was selected!**`);
         }else{
-            message.channel.send('**You do not have permission to use this command**');
+            message.channel.send(`${message.author} **You do not have permission to use this command!**`);
         }
     }
 }

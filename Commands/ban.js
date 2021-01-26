@@ -9,11 +9,11 @@ module.exports = {
         if(target){
             const memberTarget = message.guild.members.cache.get(target.id);
             memberTarget.ban();
-            message.channel.send("User has been banned from the Rocket League Trading Server");
+            message.channel.send(`<@${memberTarget.user.id}> **has been banned from the Rocket League Trading Server by** ${message.author}`);
         }else
-            message.channel.send(`**You coudn't ban that member because no member was selected!**`);
+            message.channel.send(`${message.author} **You coudn't ban that member because no member was selected!**`);
         }else{
-            message.channel.send('**You do not have permission to use this command**');
+            message.channel.send(`${message.author} **You do not have permission to use this command!**`);
         }
     }
 }
