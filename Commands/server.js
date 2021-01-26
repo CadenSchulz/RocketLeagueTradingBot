@@ -30,7 +30,7 @@ module.exports = {
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
         .setAuthor(message.guild.name, message.guild.iconURL)
-        .setColor('#FFFFFF')
+        .setColor(FFFFFF)
         .setDescription(`Owner: ${message.guild.owner} (${message.guild.owner.id})`)
         .addField('Member Count', `${message.guild.memberCount}`)
         .addField('AFK Timeout', `${message.guild.afkTimeout / 60} minutes`, true)
