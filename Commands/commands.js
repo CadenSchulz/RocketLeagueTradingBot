@@ -9,6 +9,7 @@ module.exports = {
         .addFields(
             {
                 name: '**prefix: -**',
+                value: ':white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square:'
                 inline: false
             },   
         )
@@ -32,7 +33,7 @@ module.exports = {
                 name: 'NEED HELP STILL?', 
                 value: '<#797363588909891584>',
                 inline: false
-            },
+            }
         )
         .setFooter('Rocket League Trading Server ©');
 
