@@ -17,7 +17,7 @@ module.exports = {
             {
                 name: '```For help with rules and guidelines of the server, please type:```', 
                 value: '**-rules**',
-                inline: true
+                inline: false
             },
             {
                 name: '```For help with all commands of the server, please type:```',
@@ -27,7 +27,7 @@ module.exports = {
             {
                 name: '```For help or info about this bot, please type:```',
                 value: '**-bot**',
-                inline: true
+                inline: false
             },
             {
                 name: '```For any other help not listed here or to talk to a server representative, please type:```',
