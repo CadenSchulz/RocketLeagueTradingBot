@@ -8,8 +8,8 @@ module.exports = {
         .setDescription('**Here is a complete and updated list of all commands:**')
         .addFields(
             {
-                name: '**prefix: -**',
-                value: ':white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square::white_small_square:',
+                name: ':white_small_square: **prefix: -**',
+                value: ':small_red_triangle_down: ',
                 inline: false
             },   
         )
