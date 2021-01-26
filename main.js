@@ -52,9 +52,6 @@ client.on('message', message => {
 	if(command === 'ping'){
 		client.commands.get('ping').execute(message, args, Discord)
 	}
-	if(command === 'server'){
-		client.commands.get('server').execute(message, args, Discord)
-	}
 	if(command === 'yes'){
 		client.commands.get('yes').execute(message, args, Discord)
 	}
