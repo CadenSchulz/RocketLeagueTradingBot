@@ -34,6 +34,7 @@ module.exports = {
         .setThumbnail(message.guild.iconURL())
         .setDescription(`Owner: ${message.guild.owner}`)
         .addField('Member Count', `${message.guild.memberCount}`)
+        .addField (guild.members.cache.filter(member => !member.user.bot).size)
         .addField("Roles Count", `${message.guild.roles.cache.size} roles`)
         .addField("Emoji Count", `${message.guild.emojis.cache.size} emojis`)
         .addField('AFK Timeout', `${message.guild.afkTimeout / 60} minutes`, true)
