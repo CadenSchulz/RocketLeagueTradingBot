@@ -5,7 +5,6 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
             .setColor("RANDOM")
             .setTitle("Server Info")
-            .setImage(message.guild.iconURL)
             .setDescription(`${message.guild}'s information`)
             .addField("Owner", `The owner of this server is ${message.guild.owner}`)
             .addField("Member Count", `This server has ${message.guild.memberCount} members`)
