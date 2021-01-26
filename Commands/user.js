@@ -28,45 +28,45 @@ module.exports = {
             .setThumbnail(user.user.displayAvatarURL({dynamic : true}))
             .addFields(
                 {
-                    name: "Name: ",
+                    name: "**Name: **",
                     value: user.user.username,
                     inline: true
                 },
                 {
-                    name: "#️⃣ Discriminator: ",
+                    name: "#️⃣ **Discriminator:** ",
                     value: `#${user.user.discriminator}`,
                     inline: true
                 },
                 {
-                    name: "🆔 ID: ",
+                    name: "🆔 **ID:** ",
                     value: user.user.id,
                 },
                 {
-                    name: "Current Status: ",
+                    name: "**Current Status: **",
                     value: status,
                     inline: true
                 },
                 {
-                    name: "Activity: ",
+                    name: "**Activity:** ",
                     value: user.presence.activities[0] ? user.presence.activities[0].name : `User isn't playing a game!`,
                     inline: true
                 },
                 {
-                    name: 'Avatar link: ',
+                    name: '**Avatar link:** ',
                     value: `[Click Here](${user.user.displayAvatarURL()})`
                 },
                 {
-                    name: 'Creation Date: ',
+                    name: '**Creation Date: **',
                     value: user.user.createdAt.toLocaleDateString("en-us"),
                     inline: true
                 },
                 {
-                    name: 'Joined Date: ',
+                    name: '**Joined Date: **',
                     value: user.joinedAt.toLocaleDateString("en-us"),
                     inline: true
                 },
                 {
-                    name: 'User Roles: ',
+                    name: '**User Roles: **',
                     value: user.roles.cache.map(role => role.toString()).join(" ,"),
                     inline: true
                 }
