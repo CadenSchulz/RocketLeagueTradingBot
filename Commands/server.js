@@ -32,7 +32,7 @@ module.exports = {
         .setAuthor(message.guild.name, message.guild.iconURL())
         .setColor('#FFFFFF')
         .setImage(message.guild.iconURL())
-        .setDescription(`Owner: ${message.guild.owner}`)
+        .setDescription(`Owner: ${message.guild.owner}`, message.guild.iconURL())
         .addField('Member Count', `${message.guild.memberCount}`)
         .addField("Roles Count", `${message.guild.roles.cache.size} roles`)
         .addField("Emoji Count", `${message.guild.emojis.cache.size} emojis`)
