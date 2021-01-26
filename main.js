@@ -95,7 +95,10 @@ client.on('message', message => {
 		client.commands.get('giveawaydelete').execute(message, args, Discord)
 	}
 	if(command === 'user'){
-		client.commands.get('user').execute(message, args, Discord);
+		client.commands.get('user').execute(message, args, Discord)
+	}
+	if(command === 'twitch'){
+		client.commands.get('twitch').execute(message, args, Discord);
 	}
 });
 

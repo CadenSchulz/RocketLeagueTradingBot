@@ -36,7 +36,7 @@ module.exports = {
             },
             {
                 name: ':small_red_triangle_down:', 
-                value: 'FOR A FULL AND UPDATE LIST OF COMMANDS: [CLICK HERE](https://sites.google.com/view/rocketleaguetradingserver/commands)',
+                value: '**__FOR A FULL AND UPDATE LIST OF COMMANDS:__** [CLICK HERE](https://sites.google.com/view/rocketleaguetradingserver/commands)',
                 inline: false
             }
         )
