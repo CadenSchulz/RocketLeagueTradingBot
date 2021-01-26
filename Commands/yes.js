@@ -3,10 +3,10 @@ module.exports = {
     description: "Embed for yes Command",
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
-        .setAuthor(message.guild.name, message.guild.iconURL())
+        .setAuthor(message.guild.name, ('https://cdn.discordapp.com/icons/795513122362097675/8574e462fd6570678c1d763a3a0fa6c5.webp'))
         .setColor('#777777')
         .setTitle('**__GETTING YOU HELP!__**')
-        .setThumbnail(message.guild.iconURL())
+        .setThumbnail('https://cdn.discordapp.com/icons/795513122362097675/8574e462fd6570678c1d763a3a0fa6c5.webp')
         .setDescription("**__Which of these things do you need help with?__**")
         .addFields(
             {
