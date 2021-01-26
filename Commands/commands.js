@@ -5,7 +5,6 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
         .setTitle('**__List Of Commands__**')
-        .setDescription('**Here is a complete and updated list of all commands:**')
         .addFields(
             {
                 name: ':white_small_square: **prefix: -**',
@@ -13,6 +12,7 @@ module.exports = {
                 inline: false
             },   
         )
+        .setDescription('**Here is a complete and updated list of all commands:**')
         .addFields(
             {
                 name: ':white_small_square: ``-help``', 
