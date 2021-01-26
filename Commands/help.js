@@ -5,7 +5,7 @@ module.exports = {
     description: "Embed for Help Command",
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
-        .setColor('#777777')
+        .setColor('#f3f3f3')
         .setTitle('**__HELP CENTER__**')
         .setDescription('**Check your messages!**')
         .setFooter('Rocket League Trading Server ©');

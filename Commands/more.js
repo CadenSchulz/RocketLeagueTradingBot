@@ -3,7 +3,7 @@ module.exports = {
     description: "Embed for more Command",
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
-        .setColor('#777777')
+        .setColor('#f3f3f3')
         .setTitle('**__GETTING YOU HELP!__**')
         .setDescription("**__Which of these things do you need help with?__**")
         .addFields(

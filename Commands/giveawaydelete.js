@@ -7,7 +7,7 @@ module.exports = {
 
         const newEmbed = new Discord.MessageEmbed()
         .setAuthor(message.guild.name, message.guild.iconURL())
-        .setColor('#777777')
+        .setColor('#f3f3f3')
         .setTitle('**__GIVEAWAY DELETED__**')
         .setThumbnail('https://lh3.googleusercontent.com/proxy/TBUgYaL6kmOQCiQH6JCjGeXCEnMthxWnrlKXz2eOiYihVQ0YDttI4mI24OLcDQWoZw7JVta3uBlV4eNdv1AzkCuZJu8xJZSerFnPJgpD8ISGTOVUj25TlNpW14a8PKYb0ic4')
         .setDescription('```The current giveaway has been successfully deleted```')

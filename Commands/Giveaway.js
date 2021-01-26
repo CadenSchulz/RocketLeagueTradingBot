@@ -6,7 +6,7 @@ module.exports = {
         if(message.member.roles.cache.has('795528794936311868')){
 
         const newEmbed = new Discord.MessageEmbed()
-        .setColor('#777777')
+        .setColor('#f3f3f3')
         .setTitle('**__TW Octane Giveaway__**')
         .setDescription('**How To Enter:**')
         .addFields(

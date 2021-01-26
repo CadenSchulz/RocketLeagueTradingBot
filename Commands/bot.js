@@ -3,7 +3,7 @@ module.exports = {
     description: "Embed for youtube Command",
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
-        .setColor('#777777')
+        .setColor('#f3f3f3')
         .setTitle('**__Rocket League Trading Server Bot__**')
         .setDescription("**TO ADD THIS BOT TO YOUR SERVER:** [click me](https://discord.com/api/oauth2/authorize?client_id=797190814572609627&permissions=8&scope=bot).")
         .addFields(

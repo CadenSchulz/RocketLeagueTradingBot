@@ -3,7 +3,7 @@ module.exports = {
     description: "Embed for giveaway Command",
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
-        .setColor('#777777')
+        .setColor('#f3f3f3')
         .setTitle('**__List Of Commands__**')
         .setDescription('**Here is a complete and updated list of all commands:**')
         .addFields(

@@ -30,7 +30,7 @@ module.exports = {
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
         .setAuthor(message.guild.name, message.guild.iconURL())
-        .setColor('#FFFFFF')
+        .setColor('#f3f3f3')
         .setThumbnail(message.guild.iconURL())
         .setDescription(`Owner: ${message.guild.owner}`)
         .addField('Member Count', `${message.guild.memberCount}`)
