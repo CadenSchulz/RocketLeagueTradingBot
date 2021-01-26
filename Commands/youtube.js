@@ -5,7 +5,7 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
         .setTitle('**__Rocket League Trading Server__**')
-        .setThumbnail(message.guild.iconURL())
+        .setThumbnail('https://cdn.discordapp.com/icons/795513122362097675/8574e462fd6570678c1d763a3a0fa6c5.webp')
         .setDescription("**This is the Rocket League Trading Server's Youtube Channel:** [click me](https://www.youtube.com/channel/UCeHkU3QW6zcEC68F3F4zwXw).")
         .addFields(
             {
