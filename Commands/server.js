@@ -37,7 +37,6 @@ module.exports = {
         .addField('AFK Channel', `${message.guild.afkChannelID === null ? 'No AFK Channel' : client.channels.get(message.guild.afkChannelID).name} (${message.guild.afkChannelID === null ? '' : message.guild.afkChannelID})`, true)
         .addField('Location', message.guild.region, true)
         .addField('Created', message.guild.createdAt.toLocaleString(), true)
-        .addBlankField(true)
         .setTimestamp()
         .setFooter(client.user.username, client.user.avatarURL);
         
