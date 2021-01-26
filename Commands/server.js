@@ -1,4 +1,8 @@
-let embed = new MessageEmbed()
+module.exports = {
+    name: 'server',
+    description: "Embed for server Command",
+    execute(message, args, Discord){
+        const newEmbed = new Discord.MessageEmbed()
             .setColor("RANDOM")
             .setTitle("Server Info")
             .setImage(message.guild.iconURL)
@@ -9,12 +13,14 @@ let embed = new MessageEmbed()
             .addField("Roles Count", `This server has ${message.guild.roles.cache.size} roles`)
             
 
-        message.channel.send(embed)
+        message.channel.send(newEmbed);
+    }
+}
 
 
 
 //module.exports = {
-    //name: 'server',
+  //  name: 'server',
     //description: "Embed for server Command",
     //execute(message, args, Discord){
         //const newEmbed = new Discord.MessageEmbed()
