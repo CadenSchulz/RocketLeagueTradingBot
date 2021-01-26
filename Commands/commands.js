@@ -7,10 +7,32 @@ module.exports = {
         .setTitle('**__List Of Commands__**')
         .setDescription('**Here is a complete and updated list of all commands:**')
         .addFields(
-            {name: '``-help``', value: '``-youtube``'}, //TYPE `` to make the gray outline in the embed
-            {name: '``-bot``', value: '**``-ping``**'},
-            {name: '``-server``', value: '**``----------``**'},
-            {name: 'NEED HELP STILL?', value: '<#797363588909891584>'}
+            {
+                name: '**prefix: -**',
+                inline: false
+            },   
+        )
+        .addFields(
+            {
+                name: ':white_small_square: ``-help``', 
+                value: ':white_small_square: ``-youtube``',
+                inline: false
+            },
+            {
+                name: ':white_small_square: ``-bot``', 
+                value: ':white_small_square: **``-ping``**',
+                inline: false
+            },
+            {
+                name: ':white_small_square: ``-server``', 
+                value: ':white_small_square: **``----------``**',
+                inline: false
+            },
+            {
+                name: 'NEED HELP STILL?', 
+                value: '<#797363588909891584>',
+                inline: false
+            },
         )
         .setFooter('Rocket League Trading Server ©');
 
