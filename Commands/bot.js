@@ -68,7 +68,7 @@ module.exports = {
                 },
                 {
                     name: "**Current Status: **",
-                    value: status,
+                    value: 'online :green_circle:',
                     inline: true
                 },
                 {
@@ -92,7 +92,7 @@ module.exports = {
                 },
                 {
                     name: '**Bot Roles: **',
-                    value: '<795543385632407582>',
+                    value: '<@795543385632407582>',
                     inline: true
                 }
             )
