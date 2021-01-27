@@ -92,7 +92,7 @@ module.exports = {
                 },
                 {
                     name: '**Bot Roles: **',
-                    value: `<@BOT>`,
+                    value: `<@795543385632407582>`,
                     inline: true
                 }
             )
