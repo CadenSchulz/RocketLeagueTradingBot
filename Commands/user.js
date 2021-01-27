@@ -70,7 +70,7 @@ module.exports = {
                     value: user.roles.cache.map(role => role.toString()).join(" ,"),
                     inline: true
                 }
-            )
+            );
 
             const embed = new MessageEmbed()
             .setTitle(`${user.user.username} stats`)
