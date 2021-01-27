@@ -60,6 +60,7 @@ module.exports = {
                 {
                     name: "🆔 **ID:** ",
                     value: '797190814572609627',
+                    value: true //changed
                 },
                 {
                     name: "**Bot or Not:**",
@@ -73,7 +74,8 @@ module.exports = {
                 },
                 {
                     name: '**Avatar link:** ',
-                    value: `[Click Here](https://cdn.discordapp.com/icons/795513122362097675/8574e462fd6570678c1d763a3a0fa6c5.webp)`
+                    value: `[Click Here](https://cdn.discordapp.com/icons/795513122362097675/8574e462fd6570678c1d763a3a0fa6c5.webp)`,
+                    inline: true //changed
                 },
                 {
                     name: '**Creation Date: **',
