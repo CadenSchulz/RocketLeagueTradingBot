@@ -12,7 +12,7 @@ module.exports = {
                 status = "<:online:803722108059648042> online";
                 break;
             case "dnd":
-                status = "<:dnd:80372209793027277> dnd";
+                status = "<:dnd:803722097930272778> dnd";
                 break;
             case "idle":
                 status = "<:idle:803722066066800660> idle";
