@@ -28,7 +28,7 @@ module.exports = {
             .setThumbnail(user.user.displayAvatarURL({dynamic : true}))
             .addFields(
                 {
-                    name: "**Name: **",
+                    name: ":information_source: **Name: **",
                     value: user.user.username,
                     inline: true
                 },
@@ -42,31 +42,31 @@ module.exports = {
                     value: user.user.id,
                 },
                 {
-                    name: "**Current Status: **",
+                    name: ":globe_with_meridians: **Current Status: **",
                     value: status,
                     inline: true
                 },
                 {
-                    name: "**Activity:** ",
+                    name: ":eyes: **Activity:** ",
                     value: user.presence.activities[0] ? user.presence.activities[0].name : `User isn't playing a game!`,
                     inline: true
                 },
                 {
-                    name: '**Avatar link:** ',
+                    name: ':link: **Avatar link:** ',
                     value: `[Click Here](${user.user.displayAvatarURL()})`
                 },
                 {
-                    name: '**Creation Date: **',
+                    name: ':baby: **Creation Date: **',
                     value: user.user.createdAt.toLocaleDateString("en-us"),
                     inline: true
                 },
                 {
-                    name: '**Joined Date: **',
+                    name: ':calendar_spiral: **Joined Date: **',
                     value: user.joinedAt.toLocaleDateString("en-us"),
                     inline: true
                 },
                 {
-                    name: '**User Roles: **',
+                    name: ':roll_of_paper: **User Roles: **',
                     value: user.roles.cache.map(role => role.toString()).join(" ,"),
                     inline: true
                 }
