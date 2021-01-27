@@ -43,7 +43,7 @@ module.exports = {
                 },
                 {
                     name: ":globe_with_meridians: **Current Status: **",
-                    value: status,
+                    value: user.presence.status,
                     inline: true
                 },
                 {
