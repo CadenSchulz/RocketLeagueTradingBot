@@ -98,6 +98,7 @@ module.exports = {
                 }
             )
             .setTimestamp()
+            .setFooter('Rocket League Trading Server ©');
 
         message.channel.send(embed)
     }
