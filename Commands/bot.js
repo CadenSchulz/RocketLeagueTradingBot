@@ -59,8 +59,7 @@ module.exports = {
                 },
                 {
                     name: "🆔 **ID:** ",
-                    value: '797190814572609627',
-                    value: true //changed
+                    value: '797190814572609627'
                 },
                 {
                     name: "**Bot or Not:**",
