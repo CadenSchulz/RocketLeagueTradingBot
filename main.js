@@ -98,8 +98,12 @@ client.on('message', message => {
 		client.commands.get('user').execute(message, args, Discord)
 	}
 	if(command === 'twitch'){
-		client.commands.get('twitch').execute(message, args, Discord);
+		client.commands.get('twitch').execute(message, args, Discord)
 	}
+	if(command === 'modapplication'){
+		client.commands.get('modapplication').execute(message, args, Discord);
+	}
+	
 });
 
 client.login(process.env.token);

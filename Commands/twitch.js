@@ -24,7 +24,7 @@ module.exports = {
                 inline: false
             },
             {
-                name: ':four: Step Three:',
+                name: ':four: Step Four:',
                 value: ':white_small_square:  **Turn on Notifications**',
                 inline: false
             }
