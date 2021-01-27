@@ -95,6 +95,11 @@ module.exports = {
                     name: ':roll_of_paper: **Bot Roles: **',
                     value: "<@&795543385632407582>, <@&797191878536986657>",
                     inline: true
+                },
+                {
+                    name: ':heavy_plus_sign:  **Add Bot To Your Server: **',
+                    value: "[Click Here](https://discord.com/api/oauth2/authorize?client_id=797190814572609627&permissions=8&scope=bot)",
+                    inline: true
                 }
             )
             .setTimestamp()
