@@ -48,7 +48,7 @@ module.exports = {
             .setThumbnail('https://cdn.discordapp.com/icons/795513122362097675/8574e462fd6570678c1d763a3a0fa6c5.webp')
             .addFields(
                 {
-                    name: "**Name: **",
+                    name: ":information_source: **Name: **",
                     value: 'Rocket League Trading Bot',
                     inline: true
                 },
@@ -62,37 +62,37 @@ module.exports = {
                     value: '797190814572609627'
                 },
                 {
-                    name: "**Bot or Not:**",
+                    name: ":robot: **Bot or Not:**",
                     value: 'BOT',
                     inline: true
                 },
                 {
-                    name: "**Current Status: **",
+                    name: ":globe_with_meridians: **Current Status: **",
                     value: 'online :green_circle:',
                     inline: true
                 },
                 {
-                    name: '**Avatar link:** ',
+                    name: ':link: **Avatar link:** ',
                     value: `[Click Here](https://cdn.discordapp.com/icons/795513122362097675/8574e462fd6570678c1d763a3a0fa6c5.webp)`,
                     inline: true //changed
                 },
                 {
-                    name: '**Creation Date: **',
+                    name: ':baby: **Creation Date: **',
                     value: '1/10/21',
                     inline: true
                 },
                 {
-                    name: '**Creation By: **',
+                    name: ':man_feeding_baby: **Creation By: **',
                     value: '<@700481325232160838>',
                     inline: true
                 },
                 {
-                    name: '**Joined Date: **',
+                    name: ':calendar_spiral: **Joined Date: **',
                     value: '1/10/21',
                     inline: true
                 },
                 {
-                    name: '**Bot Roles: **',
+                    name: ':roll_of_paper: **Bot Roles: **',
                     value: "<@&795543385632407582>, <@&797191878536986657>",
                     inline: true
                 }
