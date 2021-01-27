@@ -18,7 +18,7 @@ module.exports = {
                 status = "<:idle:803722066066800660> idle";
 
             case "offline":
-                status = "<:offline:803722085918179329> offline";
+                status = "<:offline:803722085918179329> offline"
                 
         };
 
