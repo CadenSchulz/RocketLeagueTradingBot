@@ -19,7 +19,7 @@ module.exports = {
                 break;
             case "offline":
                 status = "<:offline:803722085918179329> offline";
-                break;
+                
         }
 
         const embed = new MessageEmbed()
