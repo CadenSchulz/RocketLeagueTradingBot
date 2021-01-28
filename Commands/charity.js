@@ -8,7 +8,7 @@ module.exports = {
             const newEmbed = new Discord.MessageEmbed()
                 .setColor('#f3f3f3')
                 .setTitle('**__Rocket League Trading Server__**')
-                .setThumbnail('https://cdn.discordapp.com/icons/795513122362097675/8574e462fd6570678c1d763a3a0fa6c5.webp')
+                .setThumbnail('https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/1_71giin2x/def_height/2700/def_width/2700/version/100051/type/1')
                 .setDescription("**DONATE MONEY TO CHARITY!**")
                 .addFields(
                     {
