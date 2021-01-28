@@ -35,32 +35,32 @@ module.exports = {
         .setDescription(`Owner: ${message.guild.owner}`)
         .addFields(
             {
-              name: 'Member Count',
+              name: ':small_blue_diamond: Member Count',
               value: `${message.guild.memberCount}`,
               inline: false
             },
             {
-              name:"Roles Count",
+              name:":small_blue_diamond: Roles Count",
               value: `${message.guild.roles.cache.size} roles`,
               inline: false
             },
             {
-              name:'AFK Timeout',
+              name:':small_blue_diamond: AFK Timeout',
               value: `${message.guild.afkTimeout / 60} minutes`,
               inline: true
             },
             {
-              name:'AFK Channel',
+              name:':small_blue_diamond: AFK Channel',
               value: `${message.guild.afkChannelID === null ? 'No AFK Channel' : client.channels.get(message.guild.afkChannelID).name} (${message.guild.afkChannelID === null ? '' : message.guild.afkChannelID})`,
               inline: true
             },
             {
-              name:'Location',
+              name:':small_blue_diamond: Location',
               value: message.guild.region,
               inline: true
             },
             {
-              name:'Created',
+              name:':small_blue_diamond: Created',
               value: message.guild.createdAt.toLocaleString(),
               inline: true
             }
