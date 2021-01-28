@@ -121,8 +121,8 @@ client.on('message', message => {
 	if(command === 'goodnight'){
 		client.commands.get('goodnight').execute(message, args, Discord)
 	}
-	if(command === 'goodnight'){
-		client.commands.get('goodnight').execute(message, args, Discord);
+	if(command === 'charity'){
+		client.commands.get('charity').execute(message, args, Discord);
 	}
 });
 
