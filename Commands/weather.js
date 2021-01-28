@@ -1,4 +1,4 @@
-const Weather= require('weather-js');
+const weather= require('weather-js');
 
 const Discord = require('discord.js');
 
@@ -31,7 +31,7 @@ module.exports = {
         .addField('Humidity', `${current.humidity}%`, true)
 
 
-        message.channel.send(weatherinfo)
+        message.channel.send(newEmbed)
         })        
     }
 }
