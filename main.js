@@ -101,7 +101,13 @@ client.on('message', message => {
 		client.commands.get('twitch').execute(message, args, Discord)
 	}
 	if(command === 'modapplication'){
-		client.commands.get('modapplication').execute(message, args, Discord);
+		client.commands.get('modapplication').execute(message, args, Discord)
+	}
+	if(command === 'play'){
+		client.commands.get('play').execute(message, args, Discord);
+	}
+	if(command === 'leave'){
+		client.commands.get('leave').execute(message, args, Discord);
 	}
 	
 });
