@@ -37,7 +37,7 @@ module.exports = {
             message.channel.send(newEmbed);
 
         } else {
-            message.channel.send('**To donate to St. Jude:** [CLICK HERE](`https://www.paypal.com/donate?hosted_button_id=H6SZX7KVUGFJQ`)')
+            message.channel.send('**To donate to St. Jude:** [CLICK HERE](https://www.paypal.com/donate?hosted_button_id=H6SZX7KVUGFJQ)')
         }
     }
 }
