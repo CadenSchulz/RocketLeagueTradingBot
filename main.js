@@ -109,30 +109,12 @@ client.on('message', message => {
 	if(command === 'leave'){
 		client.commands.get('leave').execute(message, args, Discord)
 	}
-	if (message.content.includes("https://")) {
-    	console.log("deleted " + message.content + " from " + message.author)
-    	message.delete(1);
-    	message.channel.sendMessage("No links here, " + message.author)
-  	}
-  	if (message.content.includes("http://")) {
-    	console.log("deleted " + message.content + " from " + message.author)
-    	message.delete(1);
-    	message.channel.sendMessage("No links here, " + message.author)
-  	}
-  	if (message.content.includes("www.")) {
-    	console.log("deleted " + message.content + " from " + message.author)
-    	message.delete(1);
-    	message.channel.sendMessage("No links here, " + message.author);
-  	}
-
-
-
-
-
-
-
-
-	
+	if(command === 'gn'){
+		client.commands.get('gn').execute(message, args, Discord)
+	}
+	if(command === 'gm'){
+		client.commands.get('gm').execute(message, args, Discord);
+	}
 });
 
 client.login(process.env.token);
