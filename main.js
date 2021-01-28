@@ -121,10 +121,6 @@ client.on('message', message => {
 	if(command === 'goodnight'){
 		client.commands.get('goodnight').execute(message, args, Discord)
 	}
-	if(command === 'oldest'){
-		client.commands.get('oldest').execute(message, args, Discord); 
-	}
-
 });
 
 client.login(process.env.token);
