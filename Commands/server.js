@@ -39,8 +39,13 @@ module.exports = {
           inline: true
         },
         {
-          name: ':small_blue_diamond: Created',
-          value: message.guild.createdAt.toLocaleString(),
+          name: ':small_blue_diamond: Date Created',
+          value: message.guild.createdAt,
+          inline: true
+        },
+        {
+          name: ':small_blue_diamond: Time Created',
+          value: `4:45 AM`,
           inline: true
         }
       )
