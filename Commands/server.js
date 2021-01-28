@@ -10,7 +10,7 @@ module.exports = {
       .addFields(
         {
           name: ':small_blue_diamond: Member Count',
-          value: `${message.guild.memberCount}`,
+          value: `${message.guild.memberCount} members`,
           inline: true
         },
         {
@@ -46,6 +46,16 @@ module.exports = {
         {
           name: ':small_blue_diamond: Time Created',
           value: `4:45 AM`,
+          inline: true
+        },
+        {
+          name: ':small_blue_diamond: Bot Count',
+          value: `10`,
+          inline: true
+        },
+        {
+          name: ':small_blue_diamond: Main Bot',
+          value: `<@797190814572609627>`,
           inline: true
         }
       )
