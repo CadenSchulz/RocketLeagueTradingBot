@@ -2,6 +2,7 @@ module.exports = {
     name: 'gn',
     description: "Embed for good night Command",
     execute(message, args, Discord){
+        let user = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
         .setTitle('**__Rocket League Trading Server__**')
