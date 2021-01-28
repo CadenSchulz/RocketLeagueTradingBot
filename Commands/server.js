@@ -63,7 +63,7 @@ module.exports = {
               name:'Created',
               value: message.guild.createdAt.toLocaleString(),
               inline: true
-            },
+            }
         )
         .setTimestamp()
         .setFooter('Rocket League Trading Server ©');
