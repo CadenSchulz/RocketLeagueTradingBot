@@ -37,12 +37,12 @@ module.exports = {
             {
               name: 'Member Count',
               value: `${message.guild.memberCount}`,
-              inline: true
+              inline: false
             },
             {
               name:"Roles Count",
               value: `${message.guild.roles.cache.size} roles`,
-              inline: true
+              inline: false
             },
             {
               name:'AFK Timeout',
