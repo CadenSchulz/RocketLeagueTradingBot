@@ -40,7 +40,7 @@ module.exports = {
         },
         {
           name: ':small_blue_diamond: Date Created',
-          value: message.guild.createdAt,
+          value: `January 4th, 2021`,
           inline: true
         },
         {
