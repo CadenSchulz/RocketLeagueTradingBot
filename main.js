@@ -124,6 +124,9 @@ client.on('message', message => {
 	if(command === 'charity'){
 		client.commands.get('charity').execute(message, args, Discord);
 	}
+	if(command === 'donate'){
+		client.commands.get('donate').execute(message, args, Discord);
+	}
 });
 
 client.login(process.env.token);
