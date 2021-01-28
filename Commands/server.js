@@ -33,15 +33,51 @@ module.exports = {
         .setColor('#f3f3f3')
         .setThumbnail(message.guild.iconURL())
         .setDescription(`Owner: ${message.guild.owner}`)
-        .addField('Member Count', `${message.guild.memberCount}`)
-        .addField("Roles Count", `${message.guild.roles.cache.size} roles`)
-        .addField("Emoji Count", `${message.guild.emojis.cache.size} emojis`)
-        .addField('AFK Timeout', `${message.guild.afkTimeout / 60} minutes`, true)
-        .addField('AFK Channel', `${message.guild.afkChannelID === null ? 'No AFK Channel' : client.channels.get(message.guild.afkChannelID).name} (${message.guild.afkChannelID === null ? '' : message.guild.afkChannelID})`, true)
-        .addField('Location', message.guild.region, true)
-        .addField('Created', message.guild.createdAt.toLocaleString(), true)
+        .addFields(
+            {
+              name: 'Member Count',
+              value: `${message.guild.memberCount}`,
+              inline: false
+            },
+            {
+              name:"Roles Count",
+              value: `${message.guild.roles.cache.size} roles`,
+              inline: false
+            },
+            {
+              name:'AFK Timeout',
+              value: `${message.guild.afkTimeout / 60} minutes`,
+              inline: true
+            },
+            {
+              name:'AFK Channel',
+              value: `${message.guild.afkChannelID === null ? 'No AFK Channel' : client.channels.get(message.guild.afkChannelID).name} (${message.guild.afkChannelID === null ? '' : message.guild.afkChannelID})`,
+              inline: true
+            },
+            {
+              name:'Location',
+              value: message.guild.region,
+              inline: true
+            },
+            {
+              name:'Created',
+              value: message.guild.createdAt.toLocaleString(),
+              inline: true
+            },
+        )
         .setTimestamp()
         .setFooter('Rocket League Trading Server ©');
+
+            
+
+        // .addField("Roles Count", `${message.guild.roles.cache.size} roles`)
+        // .addField("Emoji Count", `${message.guild.emojis.cache.size} emojis`)
+        // .addField('AFK Timeout', `${message.guild.afkTimeout / 60} minutes`, true)
+        // .addField('AFK Channel', `${message.guild.afkChannelID === null ? 'No AFK Channel' : client.channels.get(message.guild.afkChannelID).name} (${message.guild.afkChannelID === null ? '' : message.guild.afkChannelID})`, true)
+        // .addField('Location', message.guild.region, true)
+        // .addField('Created', message.guild.createdAt.toLocaleString(), true)
+        // .setTimestamp()
+        // .setFooter('Rocket League Trading Server ©');
         
         message.channel.send(newEmbed);
     }
