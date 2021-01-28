@@ -107,8 +107,31 @@ client.on('message', message => {
 		client.commands.get('play').execute(message, args, Discord)
 	}
 	if(command === 'leave'){
-		client.commands.get('leave').execute(message, args, Discord);
+		client.commands.get('leave').execute(message, args, Discord)
 	}
+	if (message.content.includes("https://")) {
+    	console.log("deleted " + message.content + " from " + message.author)
+    	message.delete(1);
+    	message.channel.sendMessage("No links here, " + message.author)
+  	}
+  	if (message.content.includes("http://")) {
+    	console.log("deleted " + message.content + " from " + message.author)
+    	message.delete(1);
+    	message.channel.sendMessage("No links here, " + message.author)
+  	}
+  	if (message.content.includes("www.")) {
+    	console.log("deleted " + message.content + " from " + message.author)
+    	message.delete(1);
+    	message.channel.sendMessage("No links here, " + message.author);
+  	}
+
+
+
+
+
+
+
+
 	
 });
 
