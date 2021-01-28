@@ -35,7 +35,7 @@ module.exports = {
         },
         {
           name: ':small_blue_diamond: Other Roles',
-          value: `<@$795529951306711090> <@$795529691662123009> <@$795529768438071297> <@$795562842413465651> <@$803060692542160896> If you would like these roles, [CLICK HERE](https://discord.com/channels/795513122362097675/795547039467307029/795562465592999986)`,
+          value: `<@$795529951306711090>` `<@$795529691662123009>` `<@$795529768438071297>` `<@$795562842413465651>` `<@$803060692542160896>` `If you would like these roles, [CLICK HERE](https://discord.com/channels/795513122362097675/795547039467307029/795562465592999986)`,
           inline: true
         },
         {
