@@ -121,6 +121,7 @@ client.on('message', message => {
 	if(command === 'goodnight'){
 		client.commands.get('goodnight').execute(message, args, Discord)
 	}
+<<<<<<< HEAD
 	if(command === 'weather'){
 		client.commands.get('weather').execute(message, args, Discord);
 	}
@@ -156,6 +157,8 @@ client.on("message", async message => {
 
 
 
+=======
+>>>>>>> parent of d0caa6e... Weather
 });
 
 client.login(process.env.token);
