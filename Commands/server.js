@@ -14,8 +14,28 @@ module.exports = {
           inline: true
         },
         {
+          name: ':small_blue_diamond: Bot Count',
+          value: `10`,
+          inline: true
+        },
+        {
+          name: ':small_blue_diamond: Main Bot',
+          value: `<@797190814572609627>`,
+          inline: true
+        },
+        {
           name: ":small_blue_diamond: Roles Count",
           value: `${message.guild.roles.cache.size} roles`,
+          inline: true
+        },
+        {
+          name: ':small_blue_diamond: Main Roles',
+          value: `<@$795528794936311868> <@$797392951310549033> <@$795912955169996800> <@$798873968785621002> <@$795851077957189645> <@$795529470240358420> <@$795543385632407582>`,
+          inline: true
+        },
+        {
+          name: ':small_blue_diamond: Other Roles',
+          value: `<@$795529951306711090> <@$795529691662123009> <@$795529768438071297> <@$795562842413465651> <@$803060692542160896> If you would like these roles, [CLICK HERE](https://discord.com/channels/795513122362097675/795547039467307029/795562465592999986)`,
           inline: true
         },
         {
@@ -39,6 +59,11 @@ module.exports = {
           inline: true
         },
         {
+          name: ':small_blue_diamond: Commands List',
+          value: `[CLICK HERE](https://sites.google.com/view/rocketleaguetradingserver/commands)`,
+          inline: true
+        },
+        {
           name: ':small_blue_diamond: Date Created',
           value: `January 4th, 2021`,
           inline: true
@@ -46,16 +71,6 @@ module.exports = {
         {
           name: ':small_blue_diamond: Time Created',
           value: `4:45 AM`,
-          inline: true
-        },
-        {
-          name: ':small_blue_diamond: Bot Count',
-          value: `10`,
-          inline: true
-        },
-        {
-          name: ':small_blue_diamond: Main Bot',
-          value: `<@797190814572609627>`,
           inline: true
         }
       )
