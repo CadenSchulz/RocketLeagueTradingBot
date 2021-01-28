@@ -11,17 +11,17 @@ module.exports = {
         {
           name: ':small_blue_diamond: Member Count',
           value: `${message.guild.memberCount}`,
-          inline: false
+          inline: true
         },
         {
           name: ":small_blue_diamond: Roles Count",
           value: `${message.guild.roles.cache.size} roles`,
-          inline: false
+          inline: true
         },
         {
           name: ':small_blue_diamond: Emojis',
           value: `${message.guild.emojis.cache.size} emojis`,
-          inline: false
+          inline: true
         },
         {
           name: ':small_blue_diamond: AFK Timeout',
