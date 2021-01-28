@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'gm',
+    name: 'good morning',
     description: "Embed for good morning Command",
     execute(message, args, Discord){
         let user = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
