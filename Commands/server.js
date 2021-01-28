@@ -21,7 +21,7 @@ module.exports = {
         {
           name: ':small_blue_diamond: Emojis',
           value: `${message.guild.emojis.cache.size} emojis`,
-          inline: true
+          inline: false
         },
         {
           name: ':small_blue_diamond: AFK Timeout',
