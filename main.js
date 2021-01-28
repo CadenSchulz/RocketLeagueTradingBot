@@ -122,7 +122,7 @@ client.on('message', message => {
 		client.commands.get('goodnight').execute(message, args, Discord)
 	}
 	if(command === 'oldest'){
-		client.commands.get('oldest').execute(message, args, Discord);
+		client.commands.get('oldest').execute(message, args, Discord); 
 	}
 
 });
