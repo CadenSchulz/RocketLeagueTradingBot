@@ -116,7 +116,7 @@ client.on('message', message => {
 		client.commands.get('gm').execute(message, args, Discord);
 	}
 	if(command === 'goodmorning'){
-		client.commands.get('goodmorning').execute(message, args, Discord);
+		client.commands.get('goodmorning').execute(message, args, Discord)
 	}
 	if(command === 'goodnight'){
 		client.commands.get('goodnight').execute(message, args, Discord);
