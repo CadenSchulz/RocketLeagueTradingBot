@@ -124,6 +124,38 @@ client.on('message', message => {
 	if(command === 'weather'){
 		client.commands.get('weather').execute(message, args, Discord);
 	}
+
+
+client.on("message", async message => {
+
+	if(message.author.bot) return;
+	if(message.channel.type === 'dm') return;
+	
+	if(message.content.startsWith(prefix)) {
+		const args = message.content.slice(prefix.length).trim().split(/ +/);
+	
+		const command = args.shift().toLowerCase();
+	
+		if(!client.commands.has(command)) return;
+	
+	
+		try {
+			client.commands.get(command).run(client, message, args);
+	
+		} catch (error){
+			console.error(error);
+		}
+	}
+})
+
+
+
+
+
+
+
+
+
 });
 
 client.login(process.env.token);
