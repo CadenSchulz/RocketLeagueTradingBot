@@ -13,4 +13,4 @@ module.exports={
         .setDescription(`${mem.user.tag}) is the oldest user in ${message.guild.name}! Account creation date: ${formatDate(mem.user.createdAt)}`)
        message.channel.send(Embed)
     }
-}
+};
