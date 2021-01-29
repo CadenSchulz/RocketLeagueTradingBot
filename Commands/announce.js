@@ -9,7 +9,7 @@ module.exports = {
       return message.channel.send(
         `You did not specify your channel to send the announcement too!`
       );
-    console.log(rChannel);
+    console.log(bot);
     let MSG = message.content
       .split(`${bot.prefix}announce ${rChannel.id} `)
       .join("");
