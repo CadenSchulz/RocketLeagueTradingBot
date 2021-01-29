@@ -122,10 +122,13 @@ client.on('message', message => {
 		client.commands.get('goodnight').execute(message, args, Discord)
 	}
 	if(command === 'charity'){
-		client.commands.get('charity').execute(message, args, Discord);
+		client.commands.get('charity').execute(message, args, Discord)
 	}
 	if(command === 'donate'){
-		client.commands.get('donate').execute(message, args, Discord);
+		client.commands.get('donate').execute(message, args, Discord)
+	}
+	if(command === 'announce'){
+		client.commands.get('announce').execute(message, args, Discord);
 	}
 });
 
