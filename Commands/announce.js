@@ -18,7 +18,7 @@ module.exports = {
     const _ = new MessageEmbed()
       .setTitle(`New announcement!`)
       .setDescription(`${MSG}`)
-      .setColor("RANDOM");
+      .setColor("#f3f3f3");
     rChannel.send(_);
     message.delete();
   },
