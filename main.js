@@ -128,7 +128,7 @@ client.on('message', message => {
 		client.commands.get('donate').execute(message, args, Discord)
 	}
 	if(command === 'announce'){
-		client.commands.get('announce').execute(message, args, Discord);
+		client.commands.get('announce').run(message, args, Discord);
 	}
 });
 
