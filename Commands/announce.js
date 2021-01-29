@@ -11,9 +11,11 @@ module.exports = {
     // let MSG = message.content.split(`${bot.prefix}announce ${rChannel.id} `).join("")
     if (!MSG)return message.channel.send(`You did not specify your message to send!`)
     const _ = new MessageEmbed()
-      .setTitle(`New announcement!`)
+      .setTitle(`${message.author} says:`)
       .setDescription(`${MSG}`)
-      .setColor('#f3f3f3');
+      .setColor('#f3f3f3')
+      .setTimestamp()
+      .setFooter('Rocket League Trading Server ©')
     rChannel.send(_);
     message.delete();
   },
