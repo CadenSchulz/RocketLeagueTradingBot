@@ -3,7 +3,7 @@ module.exports = {
   name: "announce",
   description: "Get the bot to say what ever you want in a specific channel.",
   usage: "<channel id> <msg>",
-  run: async (bot, message, args) => {
+  execute: async (bot, message, args) => {
     console.log(bot);
     let rChannel = message.mentions.channels.first() /* to allow the user to #channel instead of using the ID */ || bot.channels.cache.get(args[0]);
     if (!rChannel)
