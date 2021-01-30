@@ -128,19 +128,11 @@ client.on('message', message => {
 		client.commands.get('donate').execute(message, args, Discord)
 	}
 	if(command === 'announce'){
-		client.commands.get('announce').run(message, args, Discord);
+		client.commands.get('announce').run(message, args, Discord)
 	}
-	client.on('message', function(message) {
-		if (message.content == "^clear") {
-			if (message.member.hasPermission("MANAGE_MESSAGES")) {
-				message.channel.fetchMessages()
-				   .then(function(list){
-						message.channel.bulkDelete(list);
-					}, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})                        
-			}
-		}
-	
-	});
+	if(command === 'clear'){
+		client.commands.get('clear').run(message, args, Discord);
+	}
 });
 
 client.login(process.env.token);
