@@ -138,7 +138,7 @@ client.on('guildMemberAdd', (member) => {
       const embed = new MessageEmbed()
           .setTitle(`Welcome to the Rocket League Trading Server`)
 		  .setColor('#f3f3f3')
-		  .setThumbnail(user.user.displayAvatarURL({dynamic : true}))
+		  .setThumbnail(user.displayAvatarURL())
         //    .setThumbnail(member.user.avatarURL())
 		   .setTimestamp()
 		   .addField("Name", member.user)
