@@ -131,12 +131,26 @@ client.on('message', message => {
 		client.commands.get('announce').run(message, args, Discord);
 	}
 });
-client.on('guildMemberAdd', async(member) => {
-	const Channel = member.guild.channels.cache.get('795666098707890218')
-	const embed = new MessageEmbed()
-		.setColor('#f3f3f3')
-		.setTitle('New Member')
-		.setDescription(`${member.displayName} welcome to the ${member.guild.name}, we now have ${member.guild.memberCount} members!`)
-	Channel.send(embed)
-})
+const {Client, Collection, MessageEmbed} = require("discord.js");
+const client = new Client();
+
+client.on('guildMemberAdd', (member) => {
+      const embed = new MessageEmbed()
+          .setTitle(`Welcome`)
+          .setColor('#0099ff')
+          .setDescription("description") // Optional
+           .setThumbnail(member.user.avatarURL)
+		   .setTimestamp()
+		   .addField("Name", member.user.username)
+       member.send({embed});
+	   const _embed = new MessageEmbed()
+});
+// client.on('guildMemberAdd', async(member) => {
+// 	const Channel = member.guild.channels.cache.get('795666098707890218')
+// 	const embed = new MessageEmbed()
+// 		.setColor('#f3f3f3')
+// 		.setTitle('New Member')
+// 		.setDescription(`${member.displayName} welcome to the ${member.guild.name}, we now have ${member.guild.memberCount} members!`)
+// 	Channel.send(embed)
+// })
 client.login(process.env.token);
