@@ -141,8 +141,8 @@ client.on('guildMemberAdd', (member) => {
            .setThumbnail(member.user.avatarURL)
 		   .setTimestamp()
 		   .addField("Name", member.user.username)
-		   member.guild.channels.cache.get('795666098707890218').send( {_embed} )
-	   const _embed = new MessageEmbed()
+		   member.guild.channels.cache.get('795666098707890218').send( {embed} )
+	//    const _embed = new MessageEmbed()
 });
 // client.on('guildMemberAdd', async(member) => {
 // 	const Channel = member.guild.channels.cache.get('795666098707890218')
