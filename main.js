@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-bot.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
     const exampleEmbed = new Discord.RichEmbed()
         .setColor('#0099ff')
         .setTitle('Welcome')
