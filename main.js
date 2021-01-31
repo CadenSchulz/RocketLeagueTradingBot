@@ -2,14 +2,16 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-client.on('guildMemberAdd', member => {
-    const exampleEmbed = new Discord.MessageEmbed()
+const Discord = require('discord.js');
+
+bot.on('guildMemberAdd', member => {
+    const exampleEmbed = new Discord.RichEmbed()
         .setColor('#0099ff')
         .setTitle('Welcome')
         .addField('', member.nickname)
         .setImage(member.user.avatarURL)
 
-    member.guild.channels.get('795666098707890218').send(Embed);
+    member.guild.channels.get('795666098707890218').send(exampleEmbed);
 })
 
 const privateMessag = require('./private-message')
