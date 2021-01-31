@@ -136,13 +136,12 @@ const {Client, Collection, MessageEmbed} = require("discord.js");
 
 client.on('guildMemberAdd', (member) => {
       const embed = new MessageEmbed()
-          .setTitle(`Welcome`)
-          .setColor('#0099ff')
-          .setDescription("description") // Optional
+          .setTitle(`Welcome to the Rocket League Trading Server`)
+          .setColor('#f3f3f3')
            .setThumbnail(member.user.avatarURL)
 		   .setTimestamp()
 		   .addField("Name", member.user.username)
-       member.send({embed});
+       member.channel.send({embed});
 	   const _embed = new MessageEmbed()
 });
 // client.on('guildMemberAdd', async(member) => {
