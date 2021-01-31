@@ -2,6 +2,21 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
+const {Client, Collection, MessageEmbed} = require("discord.js");
+// const client = new Client();
+
+client.on('guildMemberAdd', (member) => {
+      const embed = new MessageEmbed()
+          .setTitle(`Welcome`)
+          .setColor('#0099ff')
+          .setDescription("description") // Optional
+           .setThumbnail(member.user.avatarURL)
+           .setTimestamp()
+           .addField("Name", member.user.username)
+       member.send({embed});
+       const _embed = new MessageEmbed()
+});
+
 // const Discord = require('discord.js');
 
 // client.on('guildMemberAdd', member => {

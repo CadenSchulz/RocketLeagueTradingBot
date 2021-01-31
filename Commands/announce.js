@@ -1,37 +1,21 @@
-// const { MessageEmbed } = require("discord.js");
-// module.exports = {
-//   name: "announce",
-//   description: "Get the bot to say what ever you want in a specific channel.",
-//   usage: "<channel> <msg>",
-//   run: async (message, args, Discord) => {
-//     let rChannel = message.guild.channels.cache.get(args[0])
-//     if (!rChannel)return message.channel.send(`You did not specify your channel to send the announcement to`)
-//     console.log(rChannel);
-//     let MSG = args.slice(1).join(" ");
-//     if (!MSG)return message.channel.send(`You did not specify your message to send!`)
-//     const _ = new MessageEmbed()
-//       .setTitle(``)
-//       .setDescription(`${message.author}: ${MSG}`)
-//       .setColor('#f3f3f3')
-//       .setTimestamp()
-//       .setFooter('Rocket League Trading Server ©')
-//     rChannel.send(_);
-//     message.delete();
-//   },
-// };
-
-
-const {Client, Collection, MessageEmbed} = require("discord.js");
-const client = new Client();
-
-client.on('guildMemberAdd', (member) => {
-      const embed = new MessageEmbed()
-          .setTitle(`Welcome`)
-          .setColor('#0099ff')
-          .setDescription("description") // Optional
-           .setThumbnail(member.user.avatarURL)
-           .setTimestamp()
-           .addField("Name", member.user.username)
-       member.send({embed});
-       const _embed = new MessageEmbed()
-});
+const { MessageEmbed } = require("discord.js");
+module.exports = {
+  name: "announce",
+  description: "Get the bot to say what ever you want in a specific channel.",
+  usage: "<channel> <msg>",
+  run: async (message, args, Discord) => {
+    let rChannel = message.guild.channels.cache.get(args[0])
+    if (!rChannel)return message.channel.send(`You did not specify your channel to send the announcement to`)
+    console.log(rChannel);
+    let MSG = args.slice(1).join(" ");
+    if (!MSG)return message.channel.send(`You did not specify your message to send!`)
+    const _ = new MessageEmbed()
+      .setTitle(``)
+      .setDescription(`${message.author}: ${MSG}`)
+      .setColor('#f3f3f3')
+      .setTimestamp()
+      .setFooter('Rocket League Trading Server ©')
+    rChannel.send(_);
+    message.delete();
+  },
+};
