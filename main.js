@@ -141,7 +141,8 @@ client.on('guildMemberAdd', (member) => {
           .setColor('#0099ff')
           .setDescription("TEST TEST TEST TEST TEST TEST TEST") // Optional
            .setThumbnail(member.user.avatarURL)
-           .setTimestamp()
+		   .setTimestamp()
+		   .addField("Name", member.user.username)
        member.send({embed});
 	   const _embed = new MessageEmbed()
 });
