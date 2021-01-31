@@ -137,40 +137,6 @@ const {Client, Collection, MessageEmbed} = require("discord.js");
 
 client.on('guildMemberAdd', (member) => {
       const embed = new MessageEmbed()
-          .setTitle(`Welcome`)
-          .setColor('#0099ff')
-          .setDescription("TEST TEST TEST TEST TEST TEST TEST") // Optional
-           .setThumbnail(member.user.avatarURL)
-		   .setTimestamp()
-		   .addField("Name", member.user.username)
-       member.send({embed});
-	   const _embed = new MessageEmbed()
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const {Client, Collection, MessageEmbed} = require("discord.js");
-// const client = new Discord.Client();
-
-client.on('guildMemberAdd', (member) => {
-      const embed = new MessageEmbed()
           .setTitle(`Welcome to the Rocket League Trading Server`)
 		  .setColor('#f3f3f3')
 		  .setThumbnail(member.user.displayAvatarURL())
