@@ -139,18 +139,8 @@ client.on('guildMemberAdd', (member) => {
           .setTitle(`Welcome to the Rocket League Trading Server`)
 		  .setColor('#f3f3f3')
 		  .setThumbnail(member.user.displayAvatarURL())
-        //    .setThumbnail(member.user.avatarURL())
 		   .setTimestamp()
 		   .addField("Name", member.user)
 		   member.guild.channels.cache.get('795666098707890218').send( {embed} )
-	//    const _embed = new MessageEmbed()
 });
-// client.on('guildMemberAdd', async(member) => {
-// 	const Channel = member.guild.channels.cache.get('795666098707890218')
-// 	const embed = new MessageEmbed()
-// 		.setColor('#f3f3f3')
-// 		.setTitle('New Member')
-// 		.setDescription(`${member.displayName} welcome to the ${member.guild.name}, we now have ${member.guild.memberCount} members!`)
-// 	Channel.send(embed)
-// })
 client.login(process.env.token);
