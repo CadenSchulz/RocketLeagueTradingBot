@@ -9,7 +9,7 @@ client.on('guildMemberAdd', member => {
         .addField('', member.nickname)
         .setImage(member.user.avatarURL)
 
-    member.guild.channels.get('605000838573850635').send(exampleEmbed);
+    member.guild.channels.get('795666098707890218').send(exampleEmbed);
 })
 
 const privateMessag = require('./private-message')
