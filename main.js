@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('guildMemberAdd', member => {
-    const exampleEmbed = new Discord.RichEmbed()
+    const exampleEmbed = new Discord.MessageEmbed()
         .setColor('#0099ff')
         .setTitle('Welcome')
         .addField('', member.nickname)
