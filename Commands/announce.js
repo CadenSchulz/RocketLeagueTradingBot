@@ -5,8 +5,8 @@ module.exports = {
   usage: "<channel> <msg>",
   run: async (message, args, Discord) => {
     let rChannel = message.guild.channels.cache.get(args[0])
-    if (!rChannel.tag)return message.channel.send(`You did not specify your channel to send the announcement to`)
-    console.log(rChannel.tag);
+    if (!rChannel)return message.channel.send(`You did not specify your channel to send the announcement to`)
+    console.log(rChannel);
     let MSG = args.slice(1).join(" ");
     if (!MSG)return message.channel.send(`You did not specify your message to send!`)
     const _ = new MessageEmbed()
@@ -15,7 +15,7 @@ module.exports = {
       .setColor('#f3f3f3')
       .setTimestamp()
       .setFooter('Rocket League Trading Server ©')
-    rChannel.tag.send(_);
+    rChannel.send(_);
     message.delete();
   },
 };
