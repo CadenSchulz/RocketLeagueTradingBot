@@ -143,7 +143,8 @@ client.on('guildMemberAdd', (member) => {
            .setThumbnail(member.user.avatarURL)
            .setTimestamp()
        member.send({embed});
-       const _embed = new MessageEmbed()
+	   const _embed = new MessageEmbed()
+});
 
 
 
