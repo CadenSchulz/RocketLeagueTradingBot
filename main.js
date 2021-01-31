@@ -133,7 +133,7 @@ client.on('message', message => {
 });
 
 const {Client, Collection, MessageEmbed} = require("discord.js");
-const client = new Discord.Client();
+// const client = new Discord.Client();
 
 client.on('guildMemberAdd', (member) => {
       const embed = new MessageEmbed()
