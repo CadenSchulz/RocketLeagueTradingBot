@@ -31,7 +31,7 @@ module.exports = {
             )
             .setFooter('Rocket League Trading Server ©');
 
-        message.channel.send(newEmbed).then(msg => {msg.react('👍' + '👎')})
+        message.channel.send(newEmbed).then(msg => {msg.react('👍')}).then(msg=> {msg.react('👍')})
         // .then(() => message.react('👎'));
 
         const filter = (reaction, user) => {
