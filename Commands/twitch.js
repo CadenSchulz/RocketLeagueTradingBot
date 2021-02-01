@@ -34,8 +34,8 @@ module.exports = {
             // {name: 'Step 3', value: 'Comment'}
         )
         .setFooter('Rocket League Trading Server ©');
-        message.react('👍');
 
         message.channel.send(newEmbed);
     }
 }
+message.react('👍');
