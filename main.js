@@ -162,7 +162,7 @@ clint.on('message', message => {
 
 	if(message.content.toLowerCase() === '-roles')
 	{
-		const embed = new RichEmbed();
+		const embed = new MessageEmbed();
 		embed.setTitle("Set Platform");
 		embed.setColor("#f3f3f3");
 		message.channel.send(embed);
