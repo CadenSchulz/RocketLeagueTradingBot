@@ -131,7 +131,7 @@ client.on('message', message => {
 		client.commands.get('announce').run(message, args, Discord);
 	}
 	if(command === 'giveaway2'){
-		client.commands.get('giveaway2').run(message, args, Discord);
+		client.commands.get('giveaway2').execute(message, args, Discord);
 	}
 });
 
