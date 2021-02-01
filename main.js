@@ -26,6 +26,8 @@ client.once('ready', () =>{
 
 client.on('message', message => {
 
+	// switch(command) {}
+
 	if(!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).split(/ +/);
@@ -132,6 +134,9 @@ client.on('message', message => {
 	}
 	if(command === 'giveaway2'){
 		client.commands.get('giveaway2').execute(message, args, Discord);
+	}
+	if(command === 'eannounce'){
+		client.commands.get('eannounce').execute(message, args, Discord);
 	}
 });
 

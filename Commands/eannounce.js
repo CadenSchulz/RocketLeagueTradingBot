@@ -1,7 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 module.exports = {
-  name: "announce",
-  description: "Get the bot to say what ever you want in a specific channel.",
+  name: "eannounce",
+  description: "Get the bot to say what ever you want in a specific channel with @everyone.",
   usage: "<channel> <msg>",
   run: async (message, args, Discord) => {
     let rChannel = message.guild.channels.cache.get(args[0])
@@ -11,11 +11,11 @@ module.exports = {
     if (!MSG)return message.channel.send(`You did not specify your message to send!`)
     const _ = new MessageEmbed()
       .setTitle(``)
-      .setDescription(`${message.author}: ${MSG}`)
+      .setDescription(`${MSG}`)
       .setColor('#f3f3f3')
       .setTimestamp()
       .setFooter('Rocket League Trading Server ©')
-    rChannel.send(_);
+    rChannel.send('@everyone', _);
     message.delete();
   },
 };
