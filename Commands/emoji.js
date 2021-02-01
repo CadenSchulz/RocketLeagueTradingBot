@@ -10,7 +10,7 @@ module.exports = {
         .setDescription(`${message.author} **These are all the emojis:**`)
 
         message.channel.send(newEmbed).then(msg => {
-            msg.react(':Verified:')
+            msg.react(`795851825189617674`)
             // msg.react('')
             // msg.react('')
             // msg.react('')
