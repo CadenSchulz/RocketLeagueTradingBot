@@ -151,4 +151,21 @@ client.on('guildMemberAdd', (member) => {
 		   .addField("Name", member.user.username)
 		   member.guild.channels.cache.get('795666098707890218').send( {embed} )
 });
+
+
+clint.on('message', message => {
+	if(message.author.bot)
+	{
+		return;
+	}
+
+	if(message.content.toLowerCase() === '-roles')
+	{
+		const embed = new RichEmbed();
+		embed.setTitle("Set Platform");
+		embed.setColor("#f3f3f3");
+		message.channel.send(embed);
+	}
+})
+
 client.login(process.env.token);
