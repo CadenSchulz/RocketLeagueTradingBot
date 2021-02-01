@@ -157,9 +157,9 @@ client.login(process.env.token);
 client.on('message', message => {
 	if(message.author.bot)
 	{
-		if(message.author.bot)
-		{
-			const embedMsg = message.embeds.find(msg => msg.title === 'Set Platform');
+		// if(message.author.bot)
+		// {
+			const embedMsg = message.message.find(msg => msg.title === 'Set Platform');
 			if(embedMsg)
 			{
 				embedMsg.message.react('805820458134011975')
@@ -168,7 +168,7 @@ client.on('message', message => {
 				.then(reaction => reaction.message.react('805820551095779348'))
 				.catch(err => console.error);
 			}
-		}
+		// }
 		return;
 	}
 	if(message.content.toLowerCase() === '-roles')
