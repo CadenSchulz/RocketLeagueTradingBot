@@ -160,9 +160,9 @@ client.on('message', message => {
 		if(message.author.bot)
 		{
 			const embedMsg = message.embeds.find(msg => msg.title === 'Set Platform');
-			if(embed)
+			if(embedMessage)
 			{
-				embedMsg.message.react('805820458134011975')
+				embedMessage.message.react('805820458134011975')
 				.then(reaction => reaction.message.react('805820479305809961'))
 				.then(reaction => reaction.message.react('805820469428879390'))
 				.then(reaction => reaction.message.react('805820551095779348'))
