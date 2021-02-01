@@ -130,6 +130,9 @@ client.on('message', message => {
 	if(command === 'announce'){
 		client.commands.get('announce').run(message, args, Discord);
 	}
+	if(command === 'giveaway2'){
+		client.commands.get('giveaway2').run(message, args, Discord);
+	}
 });
 
 const {Client, Collection, MessageEmbed} = require("discord.js");
