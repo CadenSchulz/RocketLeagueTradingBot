@@ -21,7 +21,8 @@ client.once('ready', () =>{
 	console.log('RocketLeagueTradingBot is online!');
 	client.user.setActivity('for -help', {type: 'WATCHING' });
 
-	privateMessag(client, '-help', '**Do you need help? Please type -yes or -no**').then(msg => {
+	privateMessag(client, '-help', '**Do you need help? Please type -yes or -no**')
+	privateMessag.send('ok').then(msg => {
 		msg.react('👍')
 		msg.react('👎')
 	})
