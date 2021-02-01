@@ -13,7 +13,7 @@ module.exports = {
         .addFields(
             {name: '**Step 1**', value: 'React to this message (click the check mark)'},
             {name: '**__Step 2__**', value: '__**FOR EVERY PERSON YOU INVITE AND IF THEY JOIN, YOU GET 1 ENTRY IN THE RANDOM PICKER FOR THE TW OCTANE. So, the more people you invite, the greater the chance you have at winning it!**__'},
-            {name: '**Step 3**', value: 'The giveaway will be given out in __10__ days so start inviting! DM <@700481325232160838> if you have any questions.'}
+            {name: '**Step 3**', value: 'The giveaway will be random and given out in __10__ days so start inviting! DM <@700481325232160838> if you have any questions.'}
         )
         .setFooter('Rocket League Trading Server ©');
 
