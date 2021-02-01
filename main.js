@@ -21,7 +21,10 @@ client.once('ready', () =>{
 	console.log('RocketLeagueTradingBot is online!');
 	client.user.setActivity('for -help', {type: 'WATCHING' });
 
-	privateMessag(client, '-help', '**Do you need help? Please type -yes or -no**')
+	privateMessag(client, '-help', '**Do you need help? Please type -yes or -no**').then(msg => {
+		msg.react('👍')
+		msg.react('👎')
+	})
 });
 
 client.on('message', message => {
@@ -135,10 +138,7 @@ client.on('message', message => {
 		client.commands.get('giveaway2').execute(message, args, Discord)
 	}
 	if(command === 'eannounce'){
-		client.commands.get('eannounce').execute(message, args, Discord)
-	}
-	if(command === 'emoji'){
-		client.commands.get('emoji').execute(message, args, Discord);
+		client.commands.get('eannounce').execute(message, args, Discord);
 	}
 });
 
