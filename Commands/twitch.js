@@ -34,11 +34,9 @@ module.exports = {
         message.channel.send(newEmbed).then(msg => {
             msg.react('👍')
             msg.react('👎')
-        // .then(() => message.react('👎'));
 
         const filter = (reaction, user) => {
             return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
-        // };
         }
         msg.awaitReactions(filter, {max: 1, time: 60000, errors: ['time']}).then(collected => {
             const reaction = collected.first()
@@ -46,23 +44,6 @@ module.exports = {
         //   }).catch(collected => {
         //     message.reply('you did\'t react with neither a thumbs up, nor a thumbs down in time!.')
           })
-
-
-
-        // message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] }).then(collected => {
-        //         const reaction = collected.first();
-        //         console.log(reaction.emoji.name)
-
-        //         if (reaction.emoji.name === '👍') {
-        //             message.reply('you reacted with a thumbs up.');
-        //         }
-        //         else {
-        //             message.reply('you reacted with a thumbs down.');
-        //         }
-        //     })
-        //     .catch(collected => {
-        //         console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
-        //         message.reply('you did\'t react with neither a thumbs up, nor a thumbs down.');
             });
     }
 }
