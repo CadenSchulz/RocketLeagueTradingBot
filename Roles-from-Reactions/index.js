@@ -9,5 +9,5 @@ client.on('ready', () => {
 
   roleClaim(client)
 })
-client.login(process.env.token);
-// client.login(config.token)
+
+client.login(config.token)
