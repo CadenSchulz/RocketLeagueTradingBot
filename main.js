@@ -22,10 +22,6 @@ client.once('ready', () =>{
 	client.user.setActivity('for -help', {type: 'WATCHING' });
 
 	privateMessag(client, '-help', '**Do you need help? Please type -yes or -no**')
-	privateMessag.send('ok').then(msg => {
-		msg.react('👍')
-		msg.react('👎')
-	})
 });
 
 client.on('message', message => {
