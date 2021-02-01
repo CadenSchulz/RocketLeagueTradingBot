@@ -40,9 +40,9 @@ module.exports = {
             msg.react('👎')
 
         const filter = (reaction, user) => {
-            return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
+            return ['👍', '👎'].includes(reaction.emoji.name) 
         }
-        msg.awaitReactions(filter, {max: 1, time: 86400000, errors: ['time']}).then(collected => {
+        msg.awaitReactions(filter, {max: 10, time: 86400000, errors: ['time']}).then(collected => {
             const reaction = collected.first()
             message.reply((reaction.emoji.name === '👍') ? 'you are going to subscribe :)' : 'you are not going to subscribe :(')
           }).catch(collected => {
