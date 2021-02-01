@@ -26,30 +26,6 @@ client.once('ready', () =>{
 
 client.on('message', message => {
 
-	switch(command) {
-		case 'youtube2': {
-			message.reply('This is a test' + 'Pres reaction');
-			message.react('👍').then(r => {
-				message.react('👎');
-		});
-
-		// First argument is a filter function
-		message.awaitReactions((reaction, user) => user.id == message.author.id && (reaction.emoji.name == '👍' || reaction.emoji.name == '👎'),
-				{ max: 1, time: 30000 }).then(collected => {
-						if (collected.first().emoji.name == '👍') {
-								message.reply('Shutting down...');
-								client.destroy();
-						}
-						else
-								message.reply('Operation canceled.');
-				}).catch(() => {
-						message.reply('No reaction after 30 seconds, operation canceled');
-				});
-
-		break;
-		}
-	}
-
 	if(!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).split(/ +/);
