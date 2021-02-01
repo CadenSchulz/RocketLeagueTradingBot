@@ -159,7 +159,7 @@ client.on('message', message => {
 	{
 		if(message.author.bot)
 		{
-			const embedMsg = message.embeds.find(msg => msg.title === 'Set Platform');
+			const embedMessage = message.embeds.find(message => message.title === 'Set Platform');
 			if(embedMessage)
 			{
 				embedMessage.message.react('805820458134011975')
