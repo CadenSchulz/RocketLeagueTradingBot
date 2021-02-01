@@ -165,6 +165,7 @@ client.on('message', message => {
 		const embed = new MessageEmbed();
 		embed.setTitle("Set Platform");
 		embed.setColor("#f3f3f3");
+		embed.setDescription("<:pc:805820458134011975>" - `795529951306711090`)
 		message.channel.send(embed);
 	}
 });
