@@ -137,6 +137,9 @@ client.on('message', message => {
 	if(command === 'eannounce'){
 		client.commands.get('eannounce').execute(message, args, Discord);
 	}
+	if(command === 'say'){
+		client.commands.get('say').execute(message, args, Discord);
+	}
 });
 
 const {Client, Collection, MessageEmbed} = require("discord.js");
@@ -153,33 +156,3 @@ client.on('guildMemberAdd', (member) => {
 });
 
 client.login(process.env.token);
-
-// client.on('message', message => {
-// 	if(message.author.bot)
-// 	{
-// 		// if(message.author.bot)
-// 		// {
-// 			const embedMsg = message.message.find(msg => msg.title === 'Set Platform');
-// 			if(embedMsg)
-// 			{
-// 				embedMsg.message.react('805820458134011975')
-// 				.then(reaction => reaction.message.react('805820479305809961'))
-// 				.then(reaction => reaction.message.react('805820469428879390'))
-// 				.then(reaction => reaction.message.react('805820551095779348'))
-// 				.catch(err => console.error);
-// 			}
-// 		// }
-// 		return;
-// 	}
-// 	if(message.content.toLowerCase() === '-roles')
-// 	{
-// 		const embed = new MessageEmbed();
-// 		embed.setTitle("Set Platform");
-// 		embed.setColor("#f3f3f3");
-// 		embed.setDescription(`<:pc:805820458134011975> - PC (Computer)\n` +
-// 		`<:xbox:805820479305809961> - Xbox\n` +
-// 		`<:psn:805820469428879390> - Play Station\n` +
-// 		`<:switch:805820551095779348> - Nintendo Switch\n`);
-// 		message.channel.send(embed);
-// 	}
-// });
