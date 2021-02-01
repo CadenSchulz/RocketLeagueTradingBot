@@ -157,15 +157,12 @@ client.login(process.env.token);
 client.on('message', message => {
 	if(message.author.bot)
 	{
-<<<<<<< HEAD
 		if(message.author.bot)
 		{
 			const embedMsg = message.embeds.find(msg => msg.title === 'Set Platform');
-=======
 		// if(message.author.bot)
 		// {
 			const embedMsg = message.find(msg => msg.title === 'Set Platform');
->>>>>>> parent of 20e0f78... Update main.js
 			if(embedMsg)
 			{
 				embedMsg.message.react('805820458134011975')
