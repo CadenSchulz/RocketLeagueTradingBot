@@ -137,13 +137,12 @@ client.on('message', message => {
 	if(command === 'eannounce'){
 		client.commands.get('eannounce').execute(message, args, Discord);
 	}
-	if(command === 'say'){
-		client.commands.get('say').execute(message, args, Discord);
-	}
+	// if(command === 'say'){
+	// 	client.commands.get('say').execute(message, args, Discord);
+	// }
 });
 
 const {Client, Collection, MessageEmbed} = require("discord.js");
-// const client = new Discord.Client();
 
 client.on('guildMemberAdd', (member) => {
       const embed = new MessageEmbed()
