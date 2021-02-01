@@ -172,7 +172,7 @@ client.on('message', message => {
 	}
 	if(message.content.toLowerCase() === '-roles')
 	{
-		const embed = new MsgEmbed();
+		const embed = new MessageEmbed();
 		embed.setTitle("Set Platform");
 		embed.setColor("#f3f3f3");
 		embed.setDescription(`<:pc:805820458134011975> - PC (Computer)\n` +
