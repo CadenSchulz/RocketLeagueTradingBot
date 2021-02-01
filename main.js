@@ -144,7 +144,7 @@ client.on('guildMemberAdd', (member) => {
 		  .setColor('#f3f3f3')
 		  .setThumbnail(member.user.displayAvatarURL())
 		   .setTimestamp()
-		   .addField("Name", member.user)
+		   .addField("Name", member.user.username)
 		   member.guild.channels.cache.get('795666098707890218').send( {embed} )
 });
 client.login(process.env.token);
