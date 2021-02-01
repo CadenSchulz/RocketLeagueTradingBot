@@ -38,9 +38,10 @@ module.exports = {
             return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
         };
 
-        msg.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
+        message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
             .then(collected => {
                 const reaction = collected.first();
+                console.log(reaction.emoji.name)
 
                 if (reaction.emoji.name === '👍') {
                     message.reply('you reacted with a thumbs up.');
