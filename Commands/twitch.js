@@ -35,7 +35,8 @@ module.exports = {
         )
         .setFooter('Rocket League Trading Server ©');
 
-        message.channel.send(newEmbed);
+        message.channel.send(newEmbed).then(message => {
+            message.react('👍');
+        })
     }
 }
-message.react('👍');
