@@ -154,7 +154,7 @@ client.on('guildMemberAdd', (member) => {
 
 client.login(process.env.token);
 
-clint.on('message', message => {
+client.on('message', message => {
 	if(message.author.bot)
 	{
 		return;
