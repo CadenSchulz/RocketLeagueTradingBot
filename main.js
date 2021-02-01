@@ -99,7 +99,7 @@ client.on('message', message => {
 	}
 	if(command === 'twitch'){
 		client.commands.get('twitch').execute(message, args, Discord)
-		message.react('👍');
+		// message.react('👍');
 	}
 	if(command === 'modapplication'){
 		client.commands.get('modapplication').execute(message, args, Discord)
