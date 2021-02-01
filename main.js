@@ -165,7 +165,10 @@ client.on('message', message => {
 		const embed = new MessageEmbed();
 		embed.setTitle("Set Platform");
 		embed.setColor("#f3f3f3");
-		embed.setDescription("<:pc:805820458134011975>" - `795529951306711090`)
+		embed.setDescription(`<:pc:805820458134011975> - 795529951306711090\n` +
+		`<:xbox:805820479305809961> - 795529951306711090\n` +
+		`<:psn:805820469428879390> - 795529951306711090\n` +
+		`<:switch:805820551095779348> - 795529951306711090\n`);
 		message.channel.send(embed);
 	}
 });
