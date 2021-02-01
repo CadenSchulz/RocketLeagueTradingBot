@@ -162,7 +162,7 @@ client.on('message', message => {
 			const embedMsg = message.embeds.find(msg => msg.title === 'Set Platform');
 			if(embedMsg)
 			{
-				msg.react('805820458134011975')
+				embedMsg.message.react('805820458134011975')
 				.then(reaction => reaction.message.react('805820479305809961'))
 				.then(reaction => reaction.message.react('805820469428879390'))
 				.then(reaction => reaction.message.react('805820551095779348'))
