@@ -31,28 +31,35 @@ module.exports = {
             )
             .setFooter('Rocket League Trading Server ©');
 
-        message.channel.send(newEmbed).then(msg => {msg.react('👍')}).then(msg=> {msg.react('👍')})
+        message.channel.send(newEmbed).then(msg => {
+            msg.react('👍')
+            msg.react('👎')
         // .then(() => message.react('👎'));
 
         const filter = (reaction, user) => {
             return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
-        };
+        // };
+        }
+        msg.awaitReaction(filter, {max: 1, time: 60000, errors: ['time']}).then(collected => {
+            const reaction = collected.first()
+            message.reply((reaction.emoji.name === '👍') ? 'you reacted with a thumbs up.' : 'you reacted with a thumbs down.')
+          }).catch(collected => {
+            message.reply('you did\'t react with neither a thumbs up, nor a thumbs down.')
+          })
+        // message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] }).then(collected => {
+        //         const reaction = collected.first();
+        //         console.log(reaction.emoji.name)
 
-        message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
-            .then(collected => {
-                const reaction = collected.first();
-                console.log(reaction.emoji.name)
-
-                if (reaction.emoji.name === '👍') {
-                    message.reply('you reacted with a thumbs up.');
-                }
-                else {
-                    message.reply('you reacted with a thumbs down.');
-                }
-            })
-            .catch(collected => {
-                console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
-                message.reply('you did\'t react with neither a thumbs up, nor a thumbs down.');
+        //         if (reaction.emoji.name === '👍') {
+        //             message.reply('you reacted with a thumbs up.');
+        //         }
+        //         else {
+        //             message.reply('you reacted with a thumbs down.');
+        //         }
+        //     })
+        //     .catch(collected => {
+        //         console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
+        //         message.reply('you did\'t react with neither a thumbs up, nor a thumbs down.');
             });
     }
 }
