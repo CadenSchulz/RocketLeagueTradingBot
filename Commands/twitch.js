@@ -43,9 +43,12 @@ module.exports = {
         msg.awaitReactions(filter, {max: 1, time: 60000, errors: ['time']}).then(collected => {
             const reaction = collected.first()
             message.reply((reaction.emoji.name === '👍') ? 'you reacted with a thumbs up.' : 'you reacted with a thumbs down.')
-          }).catch(collected => {
-            message.reply('you did\'t react with neither a thumbs up, nor a thumbs down.')
+        //   }).catch(collected => {
+        //     message.reply('you did\'t react with neither a thumbs up, nor a thumbs down.')
           })
+
+
+
         // message.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] }).then(collected => {
         //         const reaction = collected.first();
         //         console.log(reaction.emoji.name)
