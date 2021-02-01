@@ -56,7 +56,6 @@ module.exports = {
                 console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
                 message.reply('you did\'t react with neither a thumbs up, nor a thumbs down.');
             });
-            return message.channel.send(embed);
     }
 }
 
