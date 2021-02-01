@@ -152,6 +152,7 @@ client.on('guildMemberAdd', (member) => {
 		   member.guild.channels.cache.get('795666098707890218').send( {embed} )
 });
 
+client.login(process.env.token);
 
 clint.on('message', message => {
 	if(message.author.bot)
@@ -167,5 +168,3 @@ clint.on('message', message => {
 		message.channel.send(embed);
 	}
 });
-
-client.login(process.env.token);
