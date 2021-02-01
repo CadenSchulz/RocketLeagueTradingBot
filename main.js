@@ -166,6 +166,6 @@ clint.on('message', message => {
 		embed.setColor("#f3f3f3");
 		message.channel.send(embed);
 	}
-})
+});
 
 client.login(process.env.token);
