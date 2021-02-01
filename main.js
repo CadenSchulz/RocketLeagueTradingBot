@@ -153,7 +153,7 @@ client.on('guildMemberAdd', (member) => {
 });
 
 
-clint.on('message', message => {
+clint.on('message', message) => {
 	if(message.author.bot)
 	{
 		return;
