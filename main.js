@@ -137,9 +137,9 @@ client.on('message', message => {
 	if(command === 'eannounce'){
 		client.commands.get('eannounce').execute(message, args, Discord);
 	}
-	// if(command === 'rank'){
-	// 	client.commands.get('rank').run(message, args, Discord);
-	// }
+	if(command === 'rank'){
+		client.commands.get('rank').run(message, args, Discord);
+	}
 });
 
 const {Client, Collection, MessageEmbed} = require("discord.js");
