@@ -137,9 +137,6 @@ client.on('message', message => {
 	if(command === 'eannounce'){
 		client.commands.get('eannounce').execute(message, args, Discord);
 	}
-	if(command === 'invites'){
-		client.commands.get('invites').run(message, args, Discord);
-	}
 });
 
 const {Client, Collection, MessageEmbed} = require("discord.js");
