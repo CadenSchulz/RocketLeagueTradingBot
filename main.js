@@ -138,7 +138,7 @@ client.on('message', message => {
 		client.commands.get('eannounce').execute(message, args, Discord);
 	}
 	if(command === 'rank'){
-		client.commands.get('rank').execute(message, args, Discord);
+		client.commands.get('rank').run(message, args, Discord);
 	}
 	// if(command === 'say'){
 	// 	client.commands.get('say').execute(message, args, Discord);
