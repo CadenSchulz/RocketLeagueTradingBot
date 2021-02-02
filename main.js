@@ -138,7 +138,7 @@ client.on('message', message => {
 		client.commands.get('eannounce').execute(message, args, Discord);
 	}
 	if(command === 'invites'){
-		client.commands.get('invites').execute(message, args, Discord);
+		client.commands.get('invites').run(message, args, Discord);
 	}
 });
 
