@@ -137,6 +137,7 @@ client.on('message', message => {
 	if(command === 'eannounce'){
 		client.commands.get('eannounce').execute(message, args, Discord);
 	}
+});
 
 const {Client, Collection, MessageEmbed} = require("discord.js");
 
@@ -151,5 +152,3 @@ client.on('guildMemberAdd', (member) => {
 });
 
 client.login(process.env.token);
-	},
-);
