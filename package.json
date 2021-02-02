@@ -8,8 +8,13 @@
   "author": "Caden",
   "license": "ISC",
   "dependencies": {
+    "consts": "0.0.2",
+    "db": "^3.3.1",
     "discord.js": "^12.5.1",
-    "ms": "^2.1.3"
+    "formatting": "^1.0.6",
+    "ms": "^2.1.3",
+    "rocketleague": "^1.0.2",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
