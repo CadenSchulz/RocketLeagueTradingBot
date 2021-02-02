@@ -3,7 +3,7 @@ module.exports = {
   name: "eannounce",
   description: "Get the bot to say what ever you want in a specific channel with @everyone.",
   usage: "<channel> <msg>",
-  run: async (message, args, Discord) => {
+  execute: async (message, args, Discord) => {
     let rChannel = message.guild.channels.cache.get(args[0])
     if (!rChannel)return message.channel.send(`You did not specify your channel to send the announcement to`)
     console.log(rChannel);
@@ -15,7 +15,7 @@ module.exports = {
       .setColor('#f3f3f3')
       .setTimestamp()
       .setFooter('Rocket League Trading Server ©')
-    rChannel.send('test', _);
+    rChannel.send('@everyone', _);
     message.delete();
   },
 };
