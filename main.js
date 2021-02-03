@@ -137,11 +137,8 @@ client.on('message', message => {
 	if(command === 'eannounce'){
 		client.commands.get('eannounce').execute(message, args, Discord);
 	}
-	if(command === 'send'){
-		client.commands.get('send').execute(message, args, Discord);
-	}
-	if(message.content.startsWith ("image")) {
-		message.channel.send (" ", { file: ["https://pasteboard.co/JMzEyv4.png"] });
+	if(command === 'image'){
+		client.commands.get('image').execute(message, args, Discord);
 	}
 });
 
