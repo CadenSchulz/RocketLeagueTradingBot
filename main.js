@@ -135,25 +135,28 @@ client.on('message', message => {
 		client.commands.get('giveaway2').execute(message, args, Discord)
 	}
 	if(command === 'eannounce'){
-		client.commands.get('eannounce').execute(message, args, Discord);
+		client.commands.get('eannounce').execute(message, args, Discord)
 	}
 	if(command === 'image'){
-		client.commands.get('image').execute(message, args, Discord);
+		client.commands.get('image').execute(message, args, Discord)
 	}
 	if(command === 'image2'){
-		client.commands.get('image2').execute(message, args, Discord);
+		client.commands.get('image2').execute(message, args, Discord)
 	}
 	if(command === 'image3'){
-		client.commands.get('image3').execute(message, args, Discord);
+		client.commands.get('image3').execute(message, args, Discord)
 	}
 	if(command === 'image4'){
-		client.commands.get('image4').execute(message, args, Discord);
+		client.commands.get('image4').execute(message, args, Discord)
 	}
 	if(command === 'image5'){
-		client.commands.get('image5').execute(message, args, Discord);
+		client.commands.get('image5').execute(message, args, Discord)
 	}
 	if(command === 'image6'){
-		client.commands.get('image6').execute(message, args, Discord);
+		client.commands.get('image6').execute(message, args, Discord)
+	}
+	if(command === 'Mia'){
+		client.commands.get('Mia').execute(message, args, Discord);
 	}
 });
 
