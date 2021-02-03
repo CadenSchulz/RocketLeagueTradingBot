@@ -7,7 +7,7 @@ module.exports = {
 
             const newEmbed = new Discord.MessageEmbed()
                 .setColor('#f3f3f3')
-                .setTitle('**__Rocket League Trading Server__**')
+                .setTitle('**HEHE**')
                 .setThumbnail('https://cdn.discordapp.com/attachments/803104805886623774/806054862222524466/image0.jpg')
                 .setDescription("**MIA + CADEN**")
                 .addFields(
