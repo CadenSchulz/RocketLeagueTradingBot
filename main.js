@@ -27,6 +27,7 @@ client.once('ready', () =>{
 client.on('message', message => {
 
 	if(!message.content.startsWith(prefix) || message.author.bot) return;
+	if (message.content.length > 100) return message.delete()
 
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
