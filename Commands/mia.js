@@ -3,7 +3,7 @@ module.exports = {
     description: "Embed for Mia Command",
     execute(message, args, Discord) {
 
-        if (message.member.roles.cache.has('795528794936311868')) {
+        if (message.member.roles.cache.has('801533869386891304')) {
 
             const newEmbed = new Discord.MessageEmbed()
                 .setColor('#f3f3f3')
