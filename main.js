@@ -11,163 +11,193 @@ const fs = require('fs');
 client.commands = new Discord.Collection();
 
 const commandFiles = fs.readdirSync('./Commands/').filter(File => File.endsWith('.js'));
-for(const file of commandFiles){
+for (const file of commandFiles) {
 	const command = require(`./Commands/${file}`);
 
 	client.commands.set(command.name, command);
 }
 
-client.once('ready', () =>{
+client.once('ready', () => {
 	console.log('RocketLeagueTradingBot is online!');
-	client.user.setActivity('for -help', {type: 'WATCHING' });
+	client.user.setActivity('for -help', { type: 'WATCHING' });
 
 	privateMessag(client, '-help', '**Do you need help? Please type -yes or -no**')
 });
 
 client.on('message', message => {
 
-	if(!message.content.startsWith(prefix) || message.author.bot) return;
-	if (!message.content.length > 100) return message.delete()
+	if (!message.content.startsWith(prefix) || message.author.bot) return;
+	
+	
+	
+	
+	
+	
+	
+	// if (!message.content.length > 100) return message.delete()
+
+	messagesArray = []
+
+	if (message.length >= 100) {
+		let cutMessages = []
+
+		// Here you have cut your messages
+		//if they can pass 4k chars, you'll need a loop, if not, just use substr
+
+		messagesArray.push(cutMessages)
+	}
+
+	if (messagesArray.length)
+		messagesArray.forEach(message => { console.log(message) })
+	else console.log(message)
+
+
+
+
+
+
+
+
 
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	if(command === 'help'){
+	if (command === 'help') {
 		client.commands.get('help').execute(message, args, Discord)
 	}
-	if(command === 'giveaway'){
+	if (command === 'giveaway') {
 		client.commands.get('giveaway').execute(message, args, Discord)
 	}
-	if(command === 'randomwinner'){
+	if (command === 'randomwinner') {
 		client.commands.get('randomwinner').execute(message, args, Discord)
 	}
-	if(command === 'youtube'){
+	if (command === 'youtube') {
 		client.commands.get('youtube').execute(message, args, Discord)
 	}
-	if(command === 'commands'){
+	if (command === 'commands') {
 		client.commands.get('commands').execute(message, args, Discord)
 	}
-	if(command === 'bot'){
+	if (command === 'bot') {
 		client.commands.get('bot').execute(message, args, Discord)
 	}
-	if(command === 'ping'){
+	if (command === 'ping') {
 		client.commands.get('ping').execute(message, args, Discord)
 	}
-	if(command === 'yes'){
+	if (command === 'yes') {
 		client.commands.get('yes').execute(message, args, Discord)
 	}
-	if(command === 'no'){
+	if (command === 'no') {
 		client.commands.get('no').execute(message, args, Discord)
 	}
-	if(command === 'scam'){
+	if (command === 'scam') {
 		client.commands.get('scam').execute(message, args, Discord)
 	}
-	if(command === 'rules'){
+	if (command === 'rules') {
 		client.commands.get('rules').execute(message, args, Discord)
 	}
-	if(command === 'other'){
+	if (command === 'other') {
 		client.commands.get('other').execute(message, args, Discord)
 	}
-	if(command === 'more'){
+	if (command === 'more') {
 		client.commands.get('more').execute(message, args, Discord)
 	}
-	if(command === 'shoutout'){
+	if (command === 'shoutout') {
 		client.commands.get('shoutout').execute(message, args, Discord)
 	}
-	if(command === 'kick'){
+	if (command === 'kick') {
 		client.commands.get('kick').execute(message, args, Discord)
 	}
-	if(command === 'ban'){
+	if (command === 'ban') {
 		client.commands.get('ban').execute(message, args, Discord)
 	}
-	if(command === 'mute'){
+	if (command === 'mute') {
 		client.commands.get('mute').execute(message, args, Discord)
 	}
-	if(command === 'unmute'){
+	if (command === 'unmute') {
 		client.commands.get('unmute').execute(message, args, Discord)
 	}
-	if(command === 'server'){
+	if (command === 'server') {
 		client.commands.get('server').execute(message, args, Discord)
 	}
-	if(command === 'giveawayend'){
+	if (command === 'giveawayend') {
 		client.commands.get('giveawayend').execute(message, args, Discord)
 	}
-	if(command === 'giveawaydelete'){
+	if (command === 'giveawaydelete') {
 		client.commands.get('giveawaydelete').execute(message, args, Discord)
 	}
-	if(command === 'user'){
+	if (command === 'user') {
 		client.commands.get('user').execute(message, args, Discord)
 	}
-	if(command === 'twitch'){
+	if (command === 'twitch') {
 		client.commands.get('twitch').execute(message, args, Discord)
 		// message.react('👍');
 	}
-	if(command === 'modapplication'){
+	if (command === 'modapplication') {
 		client.commands.get('modapplication').execute(message, args, Discord)
 	}
-	if(command === 'play'){
+	if (command === 'play') {
 		client.commands.get('play').execute(message, args, Discord)
 	}
-	if(command === 'leave'){
+	if (command === 'leave') {
 		client.commands.get('leave').execute(message, args, Discord)
 	}
-	if(command === 'gn'){
+	if (command === 'gn') {
 		client.commands.get('gn').execute(message, args, Discord)
 	}
-	if(command === 'gm'){
+	if (command === 'gm') {
 		client.commands.get('gm').execute(message, args, Discord)
 	}
-	if(command === 'goodmorning'){
+	if (command === 'goodmorning') {
 		client.commands.get('goodmorning').execute(message, args, Discord)
 	}
-	if(command === 'goodnight'){
+	if (command === 'goodnight') {
 		client.commands.get('goodnight').execute(message, args, Discord)
 	}
-	if(command === 'charity'){
+	if (command === 'charity') {
 		client.commands.get('charity').execute(message, args, Discord)
 	}
-	if(command === 'donate'){
+	if (command === 'donate') {
 		client.commands.get('donate').execute(message, args, Discord)
 	}
-	if(command === 'announce'){
+	if (command === 'announce') {
 		client.commands.get('announce').execute(message, args, Discord)
 	}
-	if(command === 'giveaway2'){
+	if (command === 'giveaway2') {
 		client.commands.get('giveaway2').execute(message, args, Discord)
 	}
-	if(command === 'eannounce'){
+	if (command === 'eannounce') {
 		client.commands.get('eannounce').execute(message, args, Discord)
 	}
-	if(command === 'image'){
+	if (command === 'image') {
 		client.commands.get('image').execute(message, args, Discord)
 	}
-	if(command === 'image2'){
+	if (command === 'image2') {
 		client.commands.get('image2').execute(message, args, Discord)
 	}
-	if(command === 'image3'){
+	if (command === 'image3') {
 		client.commands.get('image3').execute(message, args, Discord)
 	}
-	if(command === 'image4'){
+	if (command === 'image4') {
 		client.commands.get('image4').execute(message, args, Discord)
 	}
-	if(command === 'image5'){
+	if (command === 'image5') {
 		client.commands.get('image5').execute(message, args, Discord)
 	}
-	if(command === 'image6'){
+	if (command === 'image6') {
 		client.commands.get('image6').execute(message, args, Discord);
 	}
 });
 
-const {Client, Collection, MessageEmbed} = require("discord.js");
+const { Client, Collection, MessageEmbed } = require("discord.js");
 
 client.on('guildMemberAdd', (member) => {
-      const embed = new MessageEmbed()
-		  .setTitle(`Welcome to the Rocket League Trading Server`)
-		  .setColor('#f3f3f3')
-		  .setThumbnail(member.user.displayAvatarURL())
-		   .setTimestamp()
-		   .addField("Name", member.user.username)
-		   member.guild.channels.cache.get('795666098707890218').send( {embed} )
+	const embed = new MessageEmbed()
+		.setTitle(`Welcome to the Rocket League Trading Server`)
+		.setColor('#f3f3f3')
+		.setThumbnail(member.user.displayAvatarURL())
+		.setTimestamp()
+		.addField("Name", member.user.username)
+	member.guild.channels.cache.get('795666098707890218').send({ embed })
 });
 
 client.login(process.env.token);
