@@ -153,10 +153,7 @@ client.on('message', message => {
 		client.commands.get('image5').execute(message, args, Discord)
 	}
 	if(command === 'image6'){
-		client.commands.get('image6').execute(message, args, Discord)
-	}
-	if(command === 'mia'){
-		client.commands.get('mia').execute(message, args, Discord);
+		client.commands.get('image6').execute(message, args, Discord);
 	}
 });
 
