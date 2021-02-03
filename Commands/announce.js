@@ -13,8 +13,8 @@ module.exports = {
       .setTitle(``)
       .setDescription(`${MSG}`)
       .setColor('#f3f3f3')
-      .setTimestamp()
-      .setFooter('Rocket League Trading Server ©')
+      // .setTimestamp()
+      // .setFooter('Rocket League Trading Server ©')
     rChannel.send(_);
     message.delete();
   },
