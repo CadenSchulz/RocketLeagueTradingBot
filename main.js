@@ -161,7 +161,7 @@ const {Client, Collection, MessageEmbed} = require("discord.js");
 
 client.on('guildMemberAdd', (member) => {
       const embed = new MessageEmbed()
-          .setTitle(`Welcome to the Rocket League Trading Server`)
+		  .setTitle(`Welcome to the Rocket League Trading Server`)
 		  .setColor('#f3f3f3')
 		  .setThumbnail(member.user.displayAvatarURL())
 		   .setTimestamp()
