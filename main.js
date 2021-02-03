@@ -28,37 +28,6 @@ client.on('message', message => {
 
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	
-	
-	
-	
-	
-	
-	
-	// if (!message.content.length > 100) return message.delete()
-
-	messagesArray = []
-
-	if (message.length >= 100) {
-		let cutMessages = []
-
-		// Here you have cut your messages
-		//if they can pass 4k chars, you'll need a loop, if not, just use substr
-
-		messagesArray.push(cutMessages)
-	}
-
-	if (messagesArray.length)
-		messagesArray.forEach(message => { console.log(message) })
-	else console.log(message)
-
-
-
-
-
-
-
-
-
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
