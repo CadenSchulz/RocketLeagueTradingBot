@@ -140,6 +140,9 @@ client.on('message', message => {
 	if(command === 'send'){
 		client.commands.get('send').execute(message, args, Discord);
 	}
+	if(message.content.startsWith ("image")) {
+		message.channel.send (" ", { file: ["https://pasteboard.co/JMzEyv4.png"] });
+	}
 });
 
 const {Client, Collection, MessageEmbed} = require("discord.js");
