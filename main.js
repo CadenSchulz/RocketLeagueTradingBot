@@ -1,6 +1,7 @@
-const Discord = require('discord.js');
+const {Discord, Attachment} = require('discord.js');
 
-const client = new Discord.Client();
+// const client = new Discord.Client();
+const client = new Client ();
 
 const privateMessag = require('./private-message')
 
@@ -136,6 +137,14 @@ client.on('message', message => {
 	}
 	if(command === 'eannounce'){
 		client.commands.get('eannounce').execute(message, args, Discord);
+	}
+	let args = message.content.substring(prefix.length).split(" ");
+
+	switch(args[0]){
+		case 'send':
+			const attachment = new Attachment('file:///C:/Users/caden/OneDrive/Pictures/Gaming/1.png')
+			message.channel.send(message.author, attachment)
+		break;
 	}
 });
 
