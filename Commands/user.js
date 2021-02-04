@@ -73,8 +73,12 @@ module.exports = {
             )
 
         message.channel.send(embed).then(message => {
-            message.react('👍')
-            message.react('👎');
+            message.react('🇬')
+            message.react('🇷');
+            message.react('🇪')
+            message.react('🇦');
+            message.react('🇹')
+            message.react('❔');
         })
     }
 }
