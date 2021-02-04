@@ -77,23 +77,22 @@ module.exports = {
       .setTimestamp()
       .setFooter('Rocket League Trading Server ©');
 
+      exports.conf = {
+        enabled: true,
+        aliases: ['info', 'stats', 'serverstats', 'guildinfo', 'guildstats'],
+        permLevel: 0
+      };
+      
+      exports.help = {
+        name: 'server',
+        description: 'Displays server information & statistics',
+        usage: 'server',
+        category: 'General',
+      };
+      
     message.channel.send(newEmbed);
   }
 }
-
-exports.conf = {
-  enabled: true,
-  aliases: ['info', 'stats', 'serverstats', 'guildinfo', 'guildstats'],
-  permLevel: 0
-};
-
-exports.help = {
-  name: 'server',
-  description: 'Displays server information & statistics',
-  usage: 'server',
-  category: 'General',
-};
-
 
 
 
