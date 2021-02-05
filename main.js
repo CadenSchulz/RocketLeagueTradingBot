@@ -166,7 +166,7 @@ client.on('guildMemberAdd', (member) => {
 		.setThumbnail(member.user.displayAvatarURL())
 		.setTimestamp()
 		.addField("Name", member.user.username)
-	member.guild.channels.cache.get('795666098707890218').send({ embed })
+	member.guild.channels.cache.get('796550000569614367').send({ embed })
 });
 
 client.login(process.env.token);
