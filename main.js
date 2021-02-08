@@ -23,7 +23,7 @@ client.once('ready', () => {
 	// client.user.setActivity("Playng Rocket League", {
 	// 	type: "STREAMING",
 	// 	url: "https://www.twitch.tv/cadenscrims"
-	// });
+
 
 	privateMessag(client, '-help', '**Do you need help? Please type -yes or -no**')
 });
