@@ -19,7 +19,11 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	console.log('RocketLeagueTradingBot is online!');
-	client.user.setActivity('for -help', { type: 'WATCHING' });
+	// client.user.setActivity('for -help', { type: 'WATCHING' });
+	client.user.setActivity("Playng Rocket League", {
+		type: "STREAMING",
+		url: "https://www.twitch.tv/cadenscrims"
+	});
 
 	privateMessag(client, '-help', '**Do you need help? Please type -yes or -no**')
 });
