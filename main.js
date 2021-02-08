@@ -19,7 +19,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	console.log('RocketLeagueTradingBot is online!');
-	client.user.setActivity('for -help', { type: 'WAITING' });
+	client.user.setActivity('for -help', { type: 'WATCHING' });
 
 	privateMessag(client, '-help', '**Do you need help? Please type -yes or -no**')
 });
