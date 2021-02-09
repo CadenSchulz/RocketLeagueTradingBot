@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-const client = new Discord.Client();
+const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION" ]});
 
 const privateMessag = require('./private-message')
 
@@ -158,6 +158,9 @@ client.on('message', message => {
 	}
 	if (command === 'image6') {
 		client.commands.get('image6').execute(message, args, Discord);
+	}
+	if (command === 'reactionrole') {
+		client.commands.get('reactionrole').execute(message, args, Discord);
 	}
 });
 
