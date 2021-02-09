@@ -11,7 +11,7 @@ module.exports = {
     if (!MSG)return message.channel.send(`You did not specify your message to send!`)
     const _ = new MessageEmbed()
       .setTitle(``)
-      .setDescription(`${MSG}`)
+      .setDescription(`${user.user.username}: ${MSG}`)
       .setColor('#f3f3f3')
       // .setTimestamp()
       // .setFooter('Rocket League Trading Server ©')
