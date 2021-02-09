@@ -6,7 +6,7 @@ module.exports = {
             .setColor('#f3f3f3')
             .setTitle('**__Rocket League Trading Server__**')
             .setThumbnail('https://cdn.discordapp.com/icons/795513122362097675/8574e462fd6570678c1d763a3a0fa6c5.webp')
-            .setDescription("**This is the Rocket League Trading Server's Twitch Channel owned by <@700481325232160838>:** [click me](https://www.twitch.tv/customscrims_nae).")
+            .setDescription("**This is the Rocket League Trading Server's Twitch Channel owned by <@700481325232160838>:** [click me](https://www.twitch.tv/cadenscrims).")
             .addFields(
                 {
                     name: ':one: Step One:',
