@@ -15,8 +15,8 @@ module.exports = {
       .setColor('#f3f3f3')
       .setTimestamp()
       .setFooter('Rocket League Trading Server ©')
-    rChannel.send('|| @everyone ||', _).then(message => {
-      message.react('🇬');
+    rChannel.send('|| @everyone ||', _).then(MSG => {
+      MSG.react('🇬');
     })
 
     message.delete();
