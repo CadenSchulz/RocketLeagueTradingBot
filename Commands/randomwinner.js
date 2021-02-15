@@ -11,8 +11,8 @@ module.exports = {
                 .setThumbnail('https://temp-ca.s3.amazonaws.com/cdn-files/ris_ss788693510sst1611680127.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2YDWKLAVUAFT3HFY%2F20210126%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210126T165528Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Signature=819f667c3bcae58b2539e61e4c743091d3879a5116198b320e57cfc5a00cb19d')
                 .setTitle('**__Winner of TW OCTANE__**')
                 .addFields(
-                    { name: '**Winner:**', value: `#Juicy` },
-                    { name: '**ID:**', value: `<@753346265558941746>` },
+                    { name: '**Winner:**', value: `#Admaston` },
+                    { name: '**ID:**', value: `<@726843721701916756>` },
                     { name: '**How to claim your prize:**', value: `Please DM <@700481325232160838> to claim your prize!` }
                 )
                 .setTimestamp()
