@@ -159,6 +159,9 @@ client.on('message', message => {
 	if (command === 'image6') {
 		client.commands.get('image6').execute(message, args, Discord);
 	}
+	if (command === 'clear') {
+		client.commands.get('clear').execute(message, args, Discord);
+	}
 });
 
 const { Client, Collection, MessageEmbed } = require("discord.js");
