@@ -13,10 +13,10 @@ module.exports = {
         .setDescription('**How To Enter:**')
         .addFields(
             {name: ':one:', value: 'React to this message (click the check mark and you get 1 entry)'},
-            {name: ':two:"', value: 'For every person you invite, you get an extra entry (__**which means a better chance at winning!**__)'},
-            {name: ':three:"', value: '__A winner will be randomly chosen on **3/15/21**!__'}
+            {name: ':two:', value: 'For every person you invite, you get an extra entry (__**which means a better chance at winning!**__)'},
+            {name: ':three:', value: '__A winner will be randomly chosen on **3/15/21**!__'}
         )
-        .setFooter('The winner is chosen completely randomly. You do not need to invite people to win, but it does help you. If you do not get randomly chosen and complain or accuse this bot as rigged, then it will result in a temporary mute. Thanks, Rocket League Trading Server ©');
+        .setFooter(':asterisk: The winner is chosen completely randomly. You do not need to invite people to win, but it does help you. If you do not get randomly chosen and complain or accuse this bot as rigged, then it will result in a temporary mute. Thanks, Rocket League Trading Server ©');
 
 
             message.channel.send(newEmbed);
