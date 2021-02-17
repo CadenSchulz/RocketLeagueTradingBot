@@ -43,10 +43,10 @@ module.exports = {
         .setThumbnail('https://cdn.discordapp.com/attachments/804565322681286676/811698218701815808/dieci.png')
         .setDescription('**Who is giving it away?:**')
         .addFields(
-            {name: 'JOIN THIS DISCORD TO HAVE A CHANCE IN WINNING IT:', value: 'https://discord.gg/pUT2XZnjxn'},
+            {name: 'JOIN THIS DISCORD TO HAVE A CHANCE IN WINNING IT:', value: 'https://discord.gg/pUT2XZnjxn'}
         )
         // .setFooter('🛈 The winner is chosen completely randomly. You do not need to invite people to win, but it does help you. If you do not get randomly chosen and complain or accuse this bot as rigged, then it will result in a temporary mute. Thanks, Rocket League Trading Server ©');
-        //     message.channel.send('|| @everyone ||', newEmbed);
+            message.channel.send('|| @everyone ||', newEmbed);
 
         // } else{
         //     message.channel.send('You do not have permission to use this command')
