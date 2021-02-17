@@ -8,7 +8,7 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
         .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
-        .setTitle('**__Black Dieci (Exotic) Giveaway__**')
+        .setTitle('**__Black Dieci (Exotic) Giveaway__ (All Platforms)**')
         .setThumbnail('https://cdn.discordapp.com/attachments/804565322681286676/811698218701815808/dieci.png')
         .setDescription('**How To Enter:**')
         // .setDescription(':one: React to this message (click the check mark and you get 1 entry)')
