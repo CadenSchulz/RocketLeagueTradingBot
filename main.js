@@ -171,9 +171,9 @@ client.on('message', message => {
 	if (command === 'sug') {
 		client.commands.get('sug').execute(client, message, args, Discord);
 	}
-	if (command === 'image') {
-		client.commands.get('image').execute(client, message, args, Discord);
-	}
+	// if (command === 'image') {
+	// 	client.commands.get('image').execute(client, message, args, Discord);
+	// }
 });
 
 const { Client, Collection, MessageEmbed } = require("discord.js");
