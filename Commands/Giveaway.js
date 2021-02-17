@@ -17,24 +17,24 @@ module.exports = {
 
 
 
-        // .addFields(
-        //     {name: ':one:', value: 'React to this message (click the check mark and you get 1 entry)'},
-        //     {name: ':two:', value: 'For every person you invite, you get an extra entry (__**which means a better chance at winning!**__)'},
-        //     {name: ':three:', value: '__A winner will be randomly chosen on **3/19/21**!__'}
-        // )
-        // .addFields(
-        //     {name: ':question: If you have any questions, please contact:', value: 'An owner or Moderator'}
-        // )
-
-
-
-
         .addFields(
-            { name: 'Regular field title', value: 'Some value here' },
-            { name: '\u200B', value: '\u200B' },
-            { name: 'Inline field title', value: 'Some value here', inline: true },
-            { name: 'Inline field title', value: 'Some value here', inline: true },
+            {name: '\u200B', value: ':one: React to this message (click the check mark and you get 1 entry)'},
+            {name: '\u200B', value: ':two: For every person you invite, you get an extra entry (__**which means a better chance at winning!**__)'},
+            {name: '\u200B', value: ':three: __A winner will be randomly chosen on **3/19/21**!__'}
         )
+        .addFields(
+            {name: ':question: If you have any questions, please contact:', value: 'An owner or Moderator'}
+        )
+
+
+
+
+        // .addFields(
+        //     { name: 'Regular field title', value: 'Some value here' },
+        //     { name: '\u200B', value: '\u200B' },
+        //     { name: 'Inline field title', value: 'Some value here', inline: true },
+        //     { name: 'Inline field title', value: 'Some value here', inline: true },
+        // )
 
 
 
