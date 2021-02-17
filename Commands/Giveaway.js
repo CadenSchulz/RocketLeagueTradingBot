@@ -33,23 +33,13 @@ module.exports = {
     name: 'giveaway',
     description: "Embed for giveaway Command",
     execute(message, args, Discord){
-
-        // if(message.member.roles.cache.has('795528794936311868')){
-
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
-        .setAuthor('Caden#6969, https://cdn.discordapp.com/avatars/700481325232160838/eaea33bf12dec016fe17e9bcd8fe878e.webp'({ dynamic: true }))
         .setTitle('**__Black Dieci (Exotic) Giveaway__ (All Platforms)**')
         .setThumbnail('https://cdn.discordapp.com/attachments/804565322681286676/811698218701815808/dieci.png')
-        // .setDescription('**Who is giving it away?:**')
         .addFields(
             {name: 'JOIN THIS DISCORD TO HAVE A CHANCE IN WINNING IT:', value: 'https://discord.gg/pUT2XZnjxn'}
         )
-        // .setFooter('🛈 The winner is chosen completely randomly. You do not need to invite people to win, but it does help you. If you do not get randomly chosen and complain or accuse this bot as rigged, then it will result in a temporary mute. Thanks, Rocket League Trading Server ©');
             message.channel.send('|| @everyone ||', newEmbed);
-
-        // } else{
-        //     message.channel.send('You do not have permission to use this command')
         }
     }
-// }
