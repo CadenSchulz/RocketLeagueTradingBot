@@ -1,7 +1,21 @@
+var Scraper = require('images-scraper');
+
+const google = new Scraper({
+    puppeteer: {
+        headless: true
+    }
+})
+
 module.exports = {
     name: 'image',
-    description: 'sends image',
-    execute(message, args){
-        message.channel.send(`https://i.ibb.co/c6FCkTv/1.pngle:///C:/Users/caden/OneDrive/Pictures/Gaming/1.png`);
+    aliases: ['search','google','googleimage','lookup'],
+    cooldown: 3,
+    description: 'this sends an image to a discord channel',
+    async execute(client, message, args){
+        const image_query = args.join(' ');
+        if(!image_query) return message.channel.send('Please enter an image name');
+
+        const image_results = await google.scrape(image_query, 1);
+        message.channel.send(image_results[0].url);
     }
 }

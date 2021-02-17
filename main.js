@@ -141,8 +141,8 @@ client.on('message', message => {
 	if (command === 'eannounce') {
 		client.commands.get('eannounce').execute(message, args, Discord)
 	}
-	if (command === 'image') {
-		client.commands.get('image').execute(message, args, Discord)
+	if (command === 'image1') {
+		client.commands.get('image1').execute(message, args, Discord)
 	}
 	if (command === 'image2') {
 		client.commands.get('image2').execute(message, args, Discord)
@@ -170,6 +170,9 @@ client.on('message', message => {
 	}
 	if (command === 'sug') {
 		client.commands.get('sug').execute(client, message, args, Discord);
+	}
+	if (command === 'image') {
+		client.commands.get('image').execute(client, message, args, Discord);
 	}
 });
 
