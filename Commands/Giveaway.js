@@ -38,7 +38,7 @@ module.exports = {
 
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
-        .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
+        .setAuthor('Caden#6969, https://cdn.discordapp.com/avatars/700481325232160838/eaea33bf12dec016fe17e9bcd8fe878e.webp'({ dynamic: true }))
         .setTitle('**__Black Dieci (Exotic) Giveaway__ (All Platforms)**')
         .setThumbnail('https://cdn.discordapp.com/attachments/804565322681286676/811698218701815808/dieci.png')
         // .setDescription('**Who is giving it away?:**')
