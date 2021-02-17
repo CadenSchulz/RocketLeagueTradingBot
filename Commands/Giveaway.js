@@ -41,7 +41,7 @@ module.exports = {
         .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
         .setTitle('**__Black Dieci (Exotic) Giveaway__ (All Platforms)**')
         .setThumbnail('https://cdn.discordapp.com/attachments/804565322681286676/811698218701815808/dieci.png')
-        .setDescription('**Who is giving it away?:**')
+        // .setDescription('**Who is giving it away?:**')
         .addFields(
             {name: 'JOIN THIS DISCORD TO HAVE A CHANCE IN WINNING IT:', value: 'https://discord.gg/pUT2XZnjxn'}
         )
