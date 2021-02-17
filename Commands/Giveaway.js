@@ -18,12 +18,12 @@ module.exports = {
 
 
         .addFields(
-            {name: '\u200B', value: ':one: React to this message (click the check mark and you get 1 entry)'},
-            {name: '\u200B', value: ':two: For every person you invite, you get an extra entry (__**which means a better chance at winning!**__)'},
-            {name: '\u200B', value: ':three: __A winner will be randomly chosen on **3/19/21**!__'}
+            {name: ':one: React to this message (click the check mark and you get 1 entry)', value: '\u200B'},
+            {name: ':two: For every person you invite, you get an extra entry (__**which means a better chance at winning!**__)', value: '\u200B'},
+            {name: ':three: __A winner will be randomly chosen on **3/19/21**!__', value: '\u200B'}
         )
         .addFields(
-            {name: ':question: If you have any questions, please contact:', value: 'An owner or Moderator'}
+            {name: ':question: If you have any questions, please contact an owner or moderator', value: '\u200B'}
         )
 
 
