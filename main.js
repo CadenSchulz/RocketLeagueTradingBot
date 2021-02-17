@@ -163,7 +163,7 @@ client.on('message', message => {
 		client.commands.get('clear').execute(message, args, Discord);
 	}
 	if (command === 'suggestions') {
-		client.commands.get('suggestions').execute(message, args, Discord);
+		client.commands.get('suggestions').execute(client, message, args, Discord);
 	}
 });
 
