@@ -6,7 +6,7 @@ module.exports = {
         if(message.member.roles.cache.has('795528794936311868')){
 
         const newEmbed = new Discord.MessageEmbed()
-        .setColor('#000000')
+        .setColor('#f3f3f3')
         .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
         .setTitle('**__Black Dieci (Exotic) Giveaway__**')
         .setThumbnail('https://cdn.discordapp.com/attachments/804565322681286676/811698218701815808/dieci.png')
@@ -25,16 +25,6 @@ module.exports = {
         .addFields(
             {name: ':question: If you have any questions, please contact an owner or moderator', value: '\u200B'}
         )
-
-
-
-
-        // .addFields(
-        //     { name: 'Regular field title', value: 'Some value here' },
-        //     { name: '\u200B', value: '\u200B' },
-        //     { name: 'Inline field title', value: 'Some value here', inline: true },
-        //     { name: 'Inline field title', value: 'Some value here', inline: true },
-        // )
 
 
 
