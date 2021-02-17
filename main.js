@@ -185,7 +185,7 @@ client.on('guildMemberAdd', (member) => {
 		.setThumbnail(member.user.displayAvatarURL())
 		.setTimestamp()
 		.addField("Name", member.user.username)
-		.addField('ID/Tag:', user.username)
+		.addField('ID/Tag:', member.user)
 	member.guild.channels.cache.get('808518639845507082').send({ embed })
 });
 
