@@ -11,7 +11,7 @@ module.exports = {
     aliases: ['search','google','googleimage','lookup'],
     cooldown: 3,
     description: 'this sends an image to a discord channel',
-    async execute(client, message, args){
+    async execute(client, message, args, Discord){
         const image_query = args.join(' ');
         if(!image_query) return message.channel.send('Please enter an image name');
 
