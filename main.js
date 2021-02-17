@@ -165,6 +165,12 @@ client.on('message', message => {
 	if (command === 'suggestions') {
 		client.commands.get('suggestions').execute(client, message, args, Discord);
 	}
+	if (command === 'suggest') {
+		client.commands.get('suggest').execute(client, message, args, Discord);
+	}
+	if (command === 'sug') {
+		client.commands.get('sug').execute(client, message, args, Discord);
+	}
 });
 
 const { Client, Collection, MessageEmbed } = require("discord.js");
