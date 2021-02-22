@@ -4,6 +4,8 @@ module.exports = {
     // cooldown: 3,
     description: "Clear messages!",
     async execute(message, args) {
+        if(message.member.roles.cache.has('797392951310549033')){
+
         if(!args[0]) return message.reply("Please specify the amount of messages to clear!");
         if(isNaN(args[0])) return message.reply("Please enter a real number!");
 
@@ -14,5 +16,8 @@ module.exports = {
             message.channel.bulkDelete(messages)
             message.channel.send(`${message.author} cleared messages!`);
         })
+    } else{
+        message.channel.send('You do not have permission to use this command')
+    }
     }
 }
