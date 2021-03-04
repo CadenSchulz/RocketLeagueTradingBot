@@ -18,7 +18,11 @@ for (const file of commandFiles) {
 }
 
 client.once('ready', () => {
+	var testChannel = client.channels.find(channel => channel.id === '804565322681286676');
 	console.log('RocketLeagueTradingBot is online!');
+	setInterval(() =>{
+		testChannel.send("Hey there! This message is sent in an interval!")
+	})
 	client.user.setActivity('for -help', { type: 'WATCHING' });
 	// client.user.setActivity("Playng Rocket League", {
 	// 	type: "STREAMING",
