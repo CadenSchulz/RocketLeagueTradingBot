@@ -22,7 +22,7 @@ client.once('ready', () => {
 	console.log('RocketLeagueTradingBot is online!');
 	setInterval(() =>{
 		testChannel.send("Hey there! This message is sent in an interval!")
-	})
+	}, 10000);
 	client.user.setActivity('for -help', { type: 'WATCHING' });
 	// client.user.setActivity("Playng Rocket League", {
 	// 	type: "STREAMING",
