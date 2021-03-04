@@ -18,7 +18,7 @@ for (const file of commandFiles) {
 }
 
 client.once('ready', () => {
-	var testChannel = client.channels.find(channel => channel.id === '804565322681286676');
+	var testChannel = client.channels.cache.find(channel => channel.id === '804565322681286676');
 	console.log('RocketLeagueTradingBot is online!');
 	setInterval(() =>{
 		testChannel.send("Hey there! This message is sent in an interval!")
