@@ -12,7 +12,7 @@ module.exports = {
                 .setTitle('**__Winner of TW OCTANE__**')
                 .addFields(
                     { name: '**Winner:**', value: `Not LixYT1#3131` },
-                    { name: '**ID:**', value: `@<700846670036074546>` },
+                    { name: '**ID:**', value: `700846670036074546` },
                     { name: '**How to claim your prize:**', value: `Please DM <@700481325232160838> to claim your prize!` }
                 )
                 .setTimestamp()
