@@ -176,7 +176,7 @@ client.on('message', message => {
 		client.commands.get('sug').execute(client, message, args, Discord);
 	}
 	if (command === 'giveawaycreds') {
-		client.commands.get('giveawaycreds').execute(client, message, args, Discord);
+		client.commands.get('giveawaycreds').execute(message, args, Discord);
 	}
 	// if (command === 'image') {
 	// 	client.commands.get('image').execute(client, message, args, Discord);
