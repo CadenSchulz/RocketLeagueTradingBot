@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'modapp',
+    name: 'app',
     description: "Embed for modapp Command",
     execute(message, args, Discord){
 
