@@ -8,11 +8,11 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
         // .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
-        .setTitle('**__MODERATOR APPLICATION__ (All Platforms)**')
+        .setTitle('**__MODERATOR APPLICATION__**')
         .setThumbnail('https://www.theproche.com/wp-content/uploads/2019/04/application.jpg')
         .setDescription('**How To Apply:**')
         .addFields(
-            {name: ':one: Go to the Mod Google Doc Form: [Click Here](https://forms.gle/H6guVAVNasyoSt5m9)', value: '\u200B'},
+            {name: ':one: Go to the Mod Google Doc Form: [CLICK HERE](https://forms.gle/H6guVAVNasyoSt5m9)', value: '\u200B'},
             {name: ':two: Fill the application out to the best of your ability', value: '\u200B'},
             {name: ':three: We will review all applications and choose some people over time to have the chance to become a moderator!', value: '\u200B'}
         )
