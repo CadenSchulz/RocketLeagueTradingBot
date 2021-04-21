@@ -178,6 +178,12 @@ client.on('message', message => {
 	if (command === 'giveawaycreds') {
 		client.commands.get('giveawaycreds').execute(message, args, Discord);
 	}
+	if (command === 'modapp') {
+		client.commands.get('modapp').execute(message, args, Discord);
+	}
+	if (command === 'app') {
+		client.commands.get('app').execute(message, args, Discord);
+	}
 	// if (command === 'image') {
 	// 	client.commands.get('image').execute(client, message, args, Discord);
 	// }
