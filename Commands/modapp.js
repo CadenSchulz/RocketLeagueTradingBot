@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'giveaway',
-    description: "Embed for giveaway Command",
+    name: 'modapp',
+    description: "Embed for modapp Command",
     execute(message, args, Discord){
 
         if(message.member.roles.cache.has('795528794936311868')){
