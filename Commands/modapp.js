@@ -1,7 +1,7 @@
 module.exports = {
     name: 'giveaway',
     description: "Embed for giveaway Command",
-    execute(message, args, Discord){
+    execute(client, message, args, Discord){
 
         if(message.member.roles.cache.has('795528794936311868')){
 
