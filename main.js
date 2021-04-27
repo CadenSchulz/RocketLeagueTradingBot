@@ -19,7 +19,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	// var testChannel = client.channels.cache.find(channel => channel.id === '804565322681286676');
-	// console.log('RocketLeagueTradingBot is online!');
+	console.log('RocketLeagueTradingBot is online!');
 	// setInterval(() =>{
 	// 	testChannel.send("Good Morning Everyone")
 	// }, 86400);
@@ -202,4 +202,5 @@ client.on('guildMemberAdd', (member) => {
 	member.guild.channels.cache.get('808518639845507082').send({ embed })
 });
 
-client.login(process.env.token);
+// client.login(process.env.token);
+client.login('Nzk3MTkwODE0NTcyNjA5NjI3.X_i3zQ.Xl1y4QYguFVuSbN7zE9x-VV6Fdk');
