@@ -202,5 +202,5 @@ client.on('guildMemberAdd', (member) => {
 	member.guild.channels.cache.get('808518639845507082').send({ embed })
 });
 
-// client.login(process.env.token);
-client.login(process.env.TOKEN);
+client.login(process.env.token);
+// client.login(process.env.TOKEN);
